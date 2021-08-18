@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"> -->
+<script src="all.js"></script>
+
+<!--
+
+HAVE TO DO EITHER:
+becareful that it doesnt affct the desktop version
+
+so it works but it just doesnt wrap around anymore so we can either have 2 clases with same functionality
+
+will crate 2 seperate classes and oen will be fore desktop and the other for 
+mobile devices
+
+1) ADD THE JS NAVIGATION CLASS TO THE MOBILR STUFF AND HOPE THAT IT WORKS RESPOSNIVELY 
+2) OR ON SCREEN RESIZE AND ON SMALLER SCRENS WE HAVE TO CREATE A NEW CLAS AND DO IT THIS WAY 
+
+
+
+fix position of X -> DONE 
+fix display of ipad hamburger menu items -> Done 
+
+make sure theres no scrolling behind screen -> Done 
+
+add transitions and hovering effects for drpdowns and nav eelments
+make sure mobile has javascript functionality/accessibility
+
+
+have to figure out why the overflow wont work with media queris
+
+
+on desktop have to get rid of hambrugr menu icon and x icon and then 
+have to solve problem where the dropdown isnt visible
+
+for the mobilr hamburger menu we can use cusotm css and js to show it 
+have a class that doesnt display anythign/do anything in th  normal fotns but
+when you get below the screem siz it will activt it 
+
+have to get rid of ml-auto on smaller screen size 
+ have to refix the resizing classes to center everythign on mobile screens
+
+
+    get rid of cikc onbigger screens dont forget to add it to the resize screen
+
+    try and add highlights on hover and on focus (not click though)
+    
+
+
+have to fix dropdown space and styling
+
+    using php to display certain day times: -> Done
+    https://stackoverflow.com/questions/6450539/display-php-object-depending-on-day-of-the-week
+
+    make the nav dissaepear on scroll down after especially after certain point
+    but reappear on scroll up or arrow up
+
+    use php to display opening hours of certin days
+
+
+Focus on styling and css and makgn things look nicer
+
+            remove navbar-collapse on mobile for smooth trnasiton -> done 
+
+
+navbarSupportedContent
+so whenever something is pressed on mobile find the id navbarSupportedContent
+and remove show and then proceed with the smooth scroll -> DONE 
+
+have to set up either a class for when it is clicked on a speic nav it will
+trigger the removal of the show class -> DONE 
+
+
+
+    have to add:
+
+    NEW PROBLEM THE SLDIE IN MENU IS GLITHCY WE NED TO FIX THIS AND STYLE EVERUTHIGN NOW
+
+     css hover effs
+     on top nav we have to add the social icons and phone location opening hours etc.. 
+
+    
+
+ on mobile menu, need the menu to exit and smooth scroll to the place, xcpt -> DONE 
+ for when a drop menu class is pressed -> DONE 
+
+---------- ALL KEYBOARD REQUIRMENTS FULLFILED -------------
+
+DONE->
+Once the code below is implemented you ned to apply the same to the sub menu code
+and remove old code in there for tab and shift tab
+
+
+
+    ** HAVE TO CREAT AN ELEMENT IWTH AN ID CALLED LEAV MENU WHERE -> DONE
+    IF WE PRESS ESC OR TAB WE LAVE THE MENU, TAB IS NOT SUPPOSED TO NAVIGATE THE MENU BUT LEAVE IT -> DONE 
+
+    ** have to focus the logo when shift tab is pressed -> DONE
+
+    
+
+
+    seprate the turnaround from the arrow kys and the tab -> DONE
+
+    May have to remove the turn arround functionality with the menu because there is no way to exit it
+    or we can not apply the turn around to the tab since the website itslf is navigable by the tab
+
+have to add the shift tab to the back arrow function of the sub menu 
+add in the kydown in the if statement
+
+DO THE FORLOOP BUT JUST FOR SUB MENU 
+
+
+problem was that the li encompased the whole ul so anythign within it was triggering it
+changed the id position from the li to the anchro tag ( now dropdown1) is on a
+now it only affects it whrn you clikc on that anchor
+
+take a look at this:
+
+ONLY WAY TO MAKE DROPDOWN SUBMNU NAVIGABLE IS TO DO WHAT WE DID IN THE BEGINNIGN WITH THE LIS
+WHICH IS TO DO THE FOR LOOP
+
+
+http://rmariuzzo.github.io/dom-navigator/
+
+https://stackoverflow.com/questions/29213892/jquery-2-1-0-list-navigation-with-arrow-keys
+
+IMPORTANT
+*******************************************************
+FOR SUB MENU RIGHT AND LEFT WE WILL HAVE TO MANUALLY CODE THEM IN 
+WE WILL FOLLOW THE SAME CODE STRUCTURE AS THE TAB AND WE WILL HAVE TO KEP 
+TRACK AT TH NUMBER OF THE ELEMENTS 
+
+FOR TAB WERE AND KEYBOAR DNAVIGATION WERE GOING TO HAVE TO SEE IF WE CAN MAKE TH ELAST 
+ELEMENT NAVIGATE AND GO BACK ARROUDN TO THE LAST ELEMENT
+
+( SO IF WE PRESS BACKWARDS AND WRE ON INDEX 0 THEN WE GO TO THE LAST INDEX-1
+AND IF WE ARE ON THE LAST IDNEX -1 AND PRESS FORWARD, WE GO TO THE FIRST INDEX = 0 
+)
+
+
+
+FOR THE ESC WHAT WE CAN DO IS TARGET ITS ID? 
+
+
+HAVE TO MAYBE DUPLICAT ETEH LFT AND RIGHT CODE AND APPLY IT TO THE SUB MENU
+OR WORST CASE SCENRIO WE HAVE TO PLAY AROUND WITH ALL THE CODE WITHIN THE 
+INITIAL FOR LOOP
+
+
+
+    FOR THE SUBMENU CLOSING PROBLEM, AT THE BEGINNING OF EACH 
+    INDEX WHAR WE CAN DO IS SAY  CLOSE THE SUB MENUS AROUND IT
+
+
+    if esc is pressed check the id of the focused element 
+
+    then if the id of the element = a certain name do soemthing 
+
+
+
+    have to figure out how to target/ indicate what the focussable elementis
+
+    if focusd element has id of dropdown = close drop down if esc is pressed.
+
+    to handle esc call what we can do is 
+    for each an devery dropdown we can have it set up so that way if esc is entered while 
+    we are in one of the elemnts of the specifc ul then we will close it by removing
+    show class 
+
+    pushign the forward arrow key = tab excpt if on a sub sub eknu then it open the menu 
+    pushing the backward arrow key = going backwards = left tab except if on a sub sub menu then it closes the menu 
+
+
+
+    fix the nav problem where on mobile both the subsubmenus are displaying 
+
+    have to add the JS fro keyboard navigation
+
+
+
+keyboard navigation:
+https://simplyaccessible.com/article/arrow-key-navigation/
+
+
+THING I NEED TO KNOW AND THAT I ND COMMENTED
+
+creates the full screen hamburger menu i want:
+https://stackoverflow.com/questions/57429572/how-to-style-fullscreen-menu-under-default-bootstrap-toggler
+
+I NEEED THE JS COMEMNTED 
+I NEED TO KNOW WHAT SCRIPT MAKES THE MENU CLOSE WHEN THE ANCHRO TAG IS CHOSEN
+
+
+dropdow resposnive
+https://www.youtube.com/watch?v=bSIvF7w-lbg
+
+doubelnav example with code snippet
+https://mdbootstrap.com/snippets/jquery/mandra/56327
+
+-->
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/58f2eeec39.js" crossorigin="anonymous"></script>
+
+    <!-- stylesheet -->
+   <link rel="stylesheet" href="nav.css">
+
+<style>
+
+
+.overlay {
+
+}
+
+.overlay-content {
+
+}
+
+.overlay a {
+  
+}
+
+.overlay a:hover, .overlay a:focus {
+}
+
+.overlay .closebtn {
+
+}
+
+
+/*Allows for th dropdowsn to be full screen on safari */
+@media (max-width: 1025px){
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+position:relative;
+}
+}
+
+
+@media (max-width: 1025px){
+
+    #mobileul{
+    
+        margin: auto !important;
+    width: 100%;
+    height: 100% !important;
+    margin-bottom: 0 !important;
+    overflow-y: visible !important;
+    padding-bottom: 0 !important;
+        /*for content inside to make it go downward*/
+        flex-direction: column;
+    }
+
+    .overlay {
+  height: 100%;
+  width: 100%;
+  transform: translateX(-250%);
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.2s ease-in-out;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #45B5AA;
+  display: block;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #7EE1D6;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: -20px;
+    right: 10px;
+  font-size: 60px;
+  /*removes styles on the button*/
+  border: none;
+  background: none;
+}
+
+}
+
+
+
+
+/*dropdown menu css*/
+.dropdown-menu {
+    padding: 2rem 1rem;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 20%);
+    margin-top: 0;
+}
+
+
+
+.nav-fixed{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100000;
+}
+
+.logo,
+.footer-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img,
+.footer-logo img{
+    height: 40px;
+    object-position: center;
+    margin-right: 10px;
+}
+.logo strong,
+.footer-logo strong{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #16356b;
+    font-weight: 700;
+    font-size:2.2rem;
+}
+.info-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 4%;
+    background-color: white;
+}
+.contact-details-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.call-us,
+.opening-hours,
+.nav-location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 20px;
+}
+.call-us-text,
+.opening-hours-text,
+.nav-location-text{
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+.call-us-text span:nth-child(1),
+.opening-hours-text span:nth-child(1),
+.nav-location-text span:nth-child(1){
+    color: #595959;
+}
+.call-us-text span:nth-child(2),
+.opening-hours-text span:nth-child(2),
+.nav-location-text span:nth-child(2){
+    color: #3d3d3d;
+    font-weight: 600;
+}
+.call-us-icon i,
+.opening-hours-icon i,
+.nav-location-icon i{
+    font-size: 1.9rem;
+    color: #1b4286;
+    margin-right: 10px;
+}
+.call-us-img,
+.opening-hours-img,
+.nav-location-img{
+    margin-right: 10px;
+    height: 40px;
+}
+.call-us-img img,
+.opening-hours-img img,
+.nav-location-img img{
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+
+
+/*modifying fixd top to keep navbars on top */
+.fixed-top{
+    padding: 20px 0 20px 8px;
+}
+
+.fixed-top .navbar-nav li a{
+    font-size: 19px;
+    color: black !important;
+}
+a.dropdown-item:focus{
+    background-color: none;
+}
+
+/*dropdown submenu*/
+
+/*gets rid of the arrow gnerated by bootstrap and istad we replac it with font awesom*/
+.dropdown-toggle::after {
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+@media (min-width: 991.98px){
+
+/*makes main first level dropdoowns appear on hover*/
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+
+/*displays the first dropdown so we will have to give each dropdown unique*/
+li .dropdown-submenu:hover .dropdown-menu {
+  display: block;
+}
+
+
+/*displays the first dropdown so we will have to give each dropdown unique*/
+li .dropdown-submenu .subsub {
+  display: none;
+}
+
+
+}
+
+
+.dropdown-submenu {
+  position: relative;
+}
+
+/*displays the first dropdown so we will have to give each dropdown unique*/
+li .dropdown-submenu .subsub {
+  position: relative;
+}
+
+li .dropdown-submenu:hover .subsub {
+  display: block;
+}
+
+/*subsub menu 1*/
+
+.open-click{
+    display: block !important;
+}
+
+.exit-click{
+    display: none !important;
+}
+
+#subsub1 {
+
+}
+
+.dropdown-submenu-sub:hover #subsub1.exit-click {
+  display: block !important;
+}
+
+
+.dropdown-submenu:hover .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-left: .1rem;
+  margin-right: .1rem;
+}
+
+
+li .dropdown-submenu:hover .subsub {
+  position: relative;
+}
+
+/*end of subsub menu1*/
+
+/*subsub menu 2*/
+#subsub2 {
+
+}
+
+.dropdown-submenu-sub:hover #subsub2.exit-click {
+  display: block !important;
+}
+
+
+.dropdown-submenu:hover .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-left: .1rem;
+  margin-right: .1rem;
+}
+
+
+li .dropdown-submenu:hover .subsub {
+  position: relative;
+}
+
+/*end of subsub menu2*/
+
+/*desktopdoublenav displays when scren is on desktp/big*/
+.desktop-double-nav{
+    display: flex;
+}
+
+/*desktop navbar brand logo size*/
+.desktop-logo{
+    height: 5rem !important;
+    margin-bottom: 0 !important;
+}
+
+
+/*second nav color and atriutes*/
+.navbar.second-navbar {
+  margin-top: 65px;
+  padding: 0px;
+  background: grey !important;
+  transition: all .5s ease-in-out;
+}
+
+.navbar.second-navbar.top-nav-collapse {
+  margin-top: 45px;
+}
+
+
+    /*when the menu is open stops background scrolling*/
+    .lock-scroll {
+    overflow: hidden;
+    /*fix iphone/safari ovrflow hidden problem so you cant scroll when your ein hamburger menu*/
+    touch-action: none;
+-ms-touch-action: none;
+
+}
+
+.navbar-expander{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height:100vh;
+    display:none;
+}
+
+
+/*THIS ALLOWS THE NAV TO BE FULL SCREEN and thus allows the transition
+@media (max-width: 768px) {
+    .navbar-nav {
+  height: 100vh !important;
+}
+}
+*/
+
+
+.navbar .navbar-toggler{
+    z-index:1000
+}
+
+.mobile-nav{
+    display: none;
+}
+
+@media (max-width: 1025px){
+
+/*removes the double nav*/
+.desktop-double-nav{
+display: none;
+}
+
+/*makes sure the nav goes to the top*/
+.navbar.second-navbar {
+    /*seeparates logo and the hamburger menu*/
+justify-content: space-between;
+  margin-top: 0px;
+}
+
+/*Header text with logo*/
+.mobile-nav{
+    display: block;
+    text-align: center;
+}
+
+/*allows the navbar to scroll so you can se all contents*/
+.navbar-nav {
+  max-height:100vh;
+  overflow-y: scroll;
+}
+
+/*cntrs the content in the hambruger men with margin auto*/
+.navbar-mobile-position{
+    display:flex;
+        flex-direction:column;
+        align-content:center;
+        text-align:center !important;
+        margin: auto;
+}
+
+}
+
+
+</style>
+
+<!--
+add a double-nav-desktop class which allows you to mak th edouble nav invisible on mobile -> DONE 
+
+need to make a double nav -> DONE 
+
+need to add a logo picture on the main desktop nav -> DONE 
+
+need to add a sub menu dropdown 
+
+need to make sure its tab responsive
+
+
+
+-->
+
+</head>
+<body >
+
+          <!-- Second Navbar -->
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg  double-nav desktop-double-nav" style="background-color: whitesmoke;">
+
+        <div class="contact-details-nav navbar-left;">
+
+            <div class="call-us">
+
+                <div class="call-us-icon">
+                    <i role="none" aria-hidden="true" class="fas fa-phone-volume"></i>
+                </div>
+
+                <div class="call-us-text">
+                    <span style="color:black">Call</span>
+                    <a style="color: black;" href="tel:+15148350762"> 
+                        (514) 835 - 0762
+                    </a>
+                </div>
+
+            </div>
+
+            <!--opening-hours-------------->
+            <div class="opening-hours">
+
+                <div class="opening-hours-icon">
+                    <i aria-hidden="true" role="none" class="far fa-clock"></i>
+                </div>
+
+                <div class="opening-hours-text">
+                    <span style="color:black">Operating Hours</span>
+                    <a style="color: black;" href="#contact">
+                        9:00 AM - 11:00 PM
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="nav-location">
+
+                <div class="nav-location-icon">
+                    <i role="none" aria-hidden="true" class="fas fa-map-marker-alt"></i>
+                </div>
+
+                <div class="nav-location-text">
+                    <span style="color:black">Office</span>
+                   <a style="color: black;" href="https://www.google.com/maps/place/Agence+immobili%C3%A8re+groupe+sutton+-+action/@45.4705845,-73.4675633,16.98z/data=!4m5!3m4!1s0x4cc905826aac4823:0x7e977b395a202734!8m2!3d45.470587!4d-73.465387">
+                    2430 Boul. Lapinière, J4Z 2L7
+                   </a>
+                </div>
+            </div>
+            <div class="nav-location">
+
+                <div class="nav-location-icon">
+                    <i role="none" aria-hidden="true" class="fas fa-envelope"></i>
+                </div>
+
+                <div class="nav-location-text">
+                    <span style="color:black">Email</span>
+                   <a style="color: black;" href="https://www.google.com/maps/place/Agence+immobili%C3%A8re+groupe+sutton+-+action/@45.4705845,-73.4675633,16.98z/data=!4m5!3m4!1s0x4cc905826aac4823:0x7e977b395a202734!8m2!3d45.470587!4d-73.465387">
+                    Emadamantest@hotmail.com
+                   </a>
+                </div>
+            </div>
+
+
+        </div>
+
+        <ul class="nav navbar-nav nav-flex-icons ml-auto">
+            <li  class="nav-item">
+              <a href="#" class="nav-link"><i style="font-size: 1.2rem;"class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"><i style="font-size: 1.2rem;" class="fab fa-instagram"></i></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"><i style="font-size: 1.2rem;" class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link"><i style="font-size: 1.2rem;" class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+            </li>
+          </ul>
+      </nav>
+
+      <nav id="secondnav" class="navbar second-navbar navbar-expand-lg navbar-light fixed-top " style="background-color: whitesmoke  !important;">
+
+            <a id="logo" tabindex="0" style="margin-right: 0;" href="#"><img class="desktop-logo"  src="images/logo.png" alt=""></a>
+            <div class="fixed-action-btn" style="bottom: 25px; right: 25px;">
+                <button class="btn-floating btn-lg turquoise d-lg-none" id="openNav">
+                  <i class="fas fa-bars"></i>
+                </button>
+              </div>
+        
+
+      <!-- mobile stuff-->
+      <!-- id navsupported contnt goe on first div-->
+        <!--remove navbar-collapse on mobile for smooth trnasiton-->
+<div id="myNav" class="overlay collapse navbar-collapse navbar-mobile-position" >
+   <!--Exit menu in the hamburger menu mobile-->
+    <button class="closebtn d-lg-none" id="closeNav">&times;</button>
+
+          <ul id="mobileul" class="navbar-nav ml-auto ">
+
+  <!--Mobile stuff add mobile-nav class to it-->
+            <li class="active mobile-nav navbar-brand" style="margin-right: 0;">
+                <a id="logo" class="main_nav_mobile nav-link" href="#"><img src="images/logo.png" alt="" ></a>
+              </li>
+
+            <li class="nav-item active mobile-nav">
+                <a class="main_nav_mobile nav-link" href="#">514-xxx-xxxx</a>
+              </li>
+              
+              <li class="nav-item active mobile-nav">
+                <a class="main_nav_mobile nav-link" href="#">Monday-Satuday: 9am - 9pm<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active mobile-nav">
+                <a class="main_nav_mobile nav-link" href="#">exampleemail@hotmail.com<span class="sr-only">(current)</span></a>
+              </li>
+              <li  class="nav-item active mobile-nav">
+                <a  id="contact"class="main_nav_mobile nav-link" href="#">Example address somewhere in the galaxy<span class="sr-only">(current)</span></a>
+              </li>
+<!--END OF MOBILE ONLY NAV STUFF-->
+
+<!--NEED TO ADD THE SUBMENU CLASS IN THE UL BELOW-->
+<li  class="nav-item dropdown">
+    <a id="dropdown1" class="main_nav_mobile main_nav nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Dropdown <i class="fa fa-angle-down" aria-hidden="true"></i>
+    </a>
+    <!--ADD SUBMENU CLASS IN LIS BELOW HERE-->
+        <ul id="dropdown1ul" class="dropdown-menu ">
+            <li data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false"  class="close-burger drop-link"><a class="dropdown-item sub_menu mobile" href="#first" >First Section</a></li>
+            <li data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false"  class="drop-link close-burger"><a class="dropdown-item sub_menu mobile" href="#second">Second Section</a></li>
+            <li>
+                <li data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false"  class="drop-link close-burger">
+                    <a class="dropdown-item sub_menu mobile" href="#third">Third Section</a></li>
+               
+        </ul>
+</li>
+
+
+<li id="dropdown2" class="nav-item dropdown">
+    <a class="main_nav_mobile main_nav nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Dropdown2 <i class="fa fa-angle-down" aria-hidden="true"></i>
+    </a>
+        <ul id="dropdown2ul" class="dropdown-menu ">
+            <li data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false"  class="close-burger drop-link"><a class="dropdown-item mobile" href="#first" >First Section</a></li>
+            <li data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false"  class="drop-link close-burger"><a class="dropdown-item mobile" href="#second">Second Section</a></li>
+            <li>
+                <li data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false"  class="drop-link close-burger">
+                    <a class="dropdown-item mobile" href="#third">Third Section</a></li>
+               
+        </ul>
+</li>
+
+
+            <li id="homenav"  class=" nav-item">
+              <a  class="main_nav_mobile main_nav nav-link mobile" href="#home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="main_nav_mobile main_nav nav-link mobile" href="#link">Link</a>
+            </li>
+            <li  class="nav-item dropdown">
+              <a class="main_nav_mobile main_nav nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="main_nav_mobile main_nav nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#action">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+
+              <li class="nav-item active">
+                <a class="main_nav_mobile main_nav nav-link " href="#home">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="main_nav_mobile main_nav nav-link " href="#">Link</a>
+              </li>
+
+              <li id="dropdown3" class="nav-item dropdown">
+                <a class="main_nav_mobile main_nav nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Dropdown3 <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </a>
+                    <ul id="dropdown3ul" class="dropdown-menu ">
+                        <li data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false"  class="close-burger drop-link"><a class="dropdown-item" href="#first" >First Section</a></li>
+                        <li data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false"  class="drop-link close-burger"><a class="dropdown-item" href="#second">Second Section</a></li>
+                        <li>
+                            <li data-toggle="collapse" data-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false"  class="drop-link close-burger">
+                            <a class="dropdown-item" href="#third">Third Section</a></li>
+                    </ul>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+
+      <p style="margin-top: 100px; color: black; font-size: 100px;" tabindex="0" id="leave_menu">Leaving the menu</p>
+
+      <section id="home" style="padding-bottom: 500px;">
+        <p style="margin-top: 100px; color: black; font-size: 100px;" tabindex="0" id="leave_menu">HOME</p>
+
+    </section>
+
+      <section id="first" style="padding-bottom: 500px;">
+        <p style="margin-top: 100px; color: black; font-size: 100px;" tabindex="0" id="leave_menu">FIRST</p>
+
+    </section>
+
+      <section id="action" style="padding-bottom: 500px;">
+        <p style="margin-top: 100px; color: black; font-size: 100px;" tabindex="0" id="leave_menu">ACTION</p>
+
+      </section>
+
+
+<!--Smooth scroll-->
+<!-- <script>
+	var scroll = new SmoothScroll('a[href*="#"]');
+</script> -->
+
+<script>
+
+
+/*Stops the dropdown from closing when accessing it inside*/
+$('.dropdown-menu').on('click', function(e) {
+  e.stopPropagation();
+});
+
+
+    /*PREVENTS SCROLLING WHIL ACCESSING MENU*/
+    // going to block the body from scrolling 
+  $('#openNav').on('click', function() {
+  $('#myNav').css("transform", "translateX(0px)");
+  document.body.classList.toggle('lock-scroll');
+
+});
+
+// unblock the body from scroling 
+$('#closeNav').on('click', function() {
+  $('#myNav').css("transform", "translateX(-250%)");
+  document.querySelector('body').classList.remove('lock-scroll');
+});
+
+
+var w = window.innerWidth;
+
+if(window.innerWidth>1024){
+  $('.dropdown-menu a.dropdown-toggle').on('click', function (e) {
+    // e.preventDefault();
+            // if (!$(this).next().hasClass('show')) {
+            //     $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+            //     // console.log('third');
+            //     if ($(window).width() < 960) {
+            //         // console.log('less than 960');
+
+            //         $(this).find('.dropdown-menu').first().children().addClass('animated ' + settings.animateIn);
+            //     }
+
+            // }
+            // var $subMenu = $(this).next(".dropdown-menu");
+            // $subMenu.toggleClass('show');
+
+            // $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
+            //     $('.dropdown-menu').removeClass("show");
+            //     // console.log('four');
+
+            // });
+
+            // return false;
+        });
+}
+$(window).resize( function(){
+  if($(window).width()>1024)
+  {
+    $('.dropdown-toggle').click(function(e){
+      // e.stopImmediatePropagation();
+      e.stopPropagation()
+    })
+  }
+  if($(window).width()<1024)
+  {
+    $('.dropdown-toggle').click(function(e){
+      e.isPropagationStopped();
+    })
+  }
+  
+})
+if($(window).width()>1024)
+{
+  $('.dropdown-toggle').click(function(e){
+    e.stopImmediatePropagation();
+  })
+}
+
+</script>
+
+</body>
+</html>

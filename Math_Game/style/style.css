@@ -1,0 +1,50 @@
+.row {
+  width: 50%;
+  margin: 30px auto;
+}
+
+.row .input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.row .input-group input {
+  width: 100%;
+}
+
+#random_numbers {
+  max-width: 50%;
+}
+
+#random_numbers .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 20px auto;
+}
+
+#random_numbers .wrap .number {
+  border: 1px solid black;
+  width: 40px;
+  height: 40px;
+  margin: 50px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=style.css.map */

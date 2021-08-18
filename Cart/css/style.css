@@ -1,0 +1,256 @@
+/* CSS reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+  margin:0;
+  padding:0;
+}
+html,body {
+  margin:0;
+  padding:0;
+}
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+fieldset,img { 
+  border:0;
+}
+input{
+  border:1px solid #b0b0b0;
+  padding:3px 5px 4px;
+  color:#979797;
+  width:100%;
+}
+address,caption,cite,code,dfn,th,var {
+  font-style:normal;
+  font-weight:normal;
+}
+ol,ul {
+  list-style:none;
+}
+caption,th {
+  text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-size:100%;
+  font-weight:normal;
+}
+q:before,q:after {
+  content:'';
+}
+abbr,acronym { border:0;
+}
+/* General Demo Style */
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background: #000;
+  font-weight: 400;
+  font-size: 15px;
+  color: #aa3e03;
+}
+.ie7 body{
+  overflow:hidden;
+}
+a{
+  color: #999;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: #ccc;
+}
+
+.title {
+        width: 100%;
+        max-width: 854px;
+        margin: 0 auto;
+      }
+
+
+      /*  VIDEO PLAYER CONTAINER
+    ############################### */
+      .vid-container {
+        position: relative;
+        padding-bottom: 40%;
+        padding-top: 30px; 
+        height: 0; 
+        width:70%;
+        float:left;
+    }
+     
+    .vid-container iframe,
+    .vid-container object,
+    .vid-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 360px;
+    }
+
+
+    /*  VIDEOS PLAYLIST 
+    ############################### */
+    .vid-list-container {
+      width: 30%;
+      height:360px;
+      overflow: hidden;
+      float:right;
+    }
+
+    .vid-list-container:hover, .vid-list-container:focus {
+       overflow-y: auto;
+     }
+
+    ol#vid-list {
+      margin:0;
+      padding:0;
+      background: #222;
+    }
+
+    ol#vid-list li {
+      list-style: none;
+    }
+
+    ol#vid-list li a {
+      text-decoration: none;
+      background-color: #222;
+      height:55px;
+      display:block;
+      padding:10px;
+    }
+
+    ol#vid-list li a:hover {
+      background-color:#666666
+    }
+
+    .vid-thumb {
+      float:left;
+      margin-right: 8px;
+    }
+
+    .active-vid { 
+      background:#3A3A3A;
+    }
+
+    #vid-list .desc {
+      color: #CACACA;
+      font-size: 13px;
+      margin-top:5px;
+    }
+
+
+    @media (max-width: 624px) {
+      body {
+        margin: 15px;
+      }
+      .caption {
+        margin-top: 40px;
+      }
+      .vid-list-container {
+        padding-bottom: 20px;
+      }
+
+    }
+
+.container{
+  position: relative;
+  text-align: center;
+}
+.clr{
+  clear: both;
+}
+.container > header{
+  padding: 200px 30px 10px 20px;
+  margin: 0px 20px 10px 20px;
+  position: relative;
+  display: block;
+    text-align: left;
+}
+
+.container > header h1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  position: relative;
+  color: #999;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+  padding: 10px 0px 5px 0px;
+  left: 15%;
+  width: 350px;
+}
+
+/* Sosyal Medya */
+#face {
+  top: 2%;
+  height: 32px;
+  right: 3.5%;
+  position: fixed;
+  width: 32px;
+  z-index:9999;
+}
+
+#face a.facebook {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: url(../images/facebook.png) 0 0 no-repeat;
+  
+}
+
+#face a:hover.facebook {
+    background-position: -32px 0;
+}
+
+#twit {
+  top: 2%;
+  height: 32px;
+  right: 1%;
+  position: fixed;
+  width: 32px;
+  z-index:9999;
+}
+
+#twit a.twitter {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: url(../images/twitter.png) 0 0 no-repeat;
+  
+}
+
+#twit a:hover.twitter {
+    background-position: -32px 0;
+}
+
+#instagram {
+  top: 2%;
+  height: 32px;
+  right: 1%;
+  position: fixed;
+  width: 32px;
+  z-index:9999;
+}
+
+#instagram a.instagram {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: url(../images/instagram.png) 0 0 no-repeat;
+  
+}
+
+#instagram a:hover.instagram {
+    background-position: -32px 0;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 767px) {
+  .container > header{
+    text-align: center;
+  }
+  p.codrops-demos {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+}

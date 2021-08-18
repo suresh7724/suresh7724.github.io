@@ -1,0 +1,36 @@
+.cart-btn
+{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    position: sticky;
+    left: 0px;
+    top: -3%;
+    left: 20px;
+    right: 5%;
+    margin-right: 25px;
+}
+.cart-btn button
+{
+    font-size: 1.6em;
+}
+.alert
+{
+    position: fixed;
+    top: 24px;
+    width: 60%;
+    left: 20%;
+}
+#cart-body input
+{
+    width: 63px;
+    margin-left: 15px;
+}
+
+.details input[type=number]::-webkit-inner-spin-button, 
+.details input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}

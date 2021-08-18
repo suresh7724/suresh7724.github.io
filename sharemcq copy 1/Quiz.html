@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Share Mcq</title>
+    <link href="style/style.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="style/quiz.css">
+
+    <script src="https://kit.fontawesome.com/58f2eeec39.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            overflow-x: hidden;
+            background-color: #fafafa;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar starts here -->
+    <section id="navbar">
+        <div class="firstnav">
+
+            <div class="zeynep">
+                <div class="close">
+
+                    <i class="fas fa-times mr-3 mt-2 closer "></i>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#"><img src="img/Logo.png" width="90px" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+
+                    <li class="has-submenu">
+                        <a href="#" data-submenu="affairs">Current Affairs</a>
+
+                        <div id="affairs" class="submenu">
+                            <div class="submenu-header" data-submenu-close="affairs">
+                                <a href="#">Current Affairs</a>
+                            </div>
+
+                            <label>Current Affairs</label>
+
+                            <ul>
+                                <li>
+                                    <a href="#">World Affairs</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Pakistan Affairs</a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </li>
+
+
+                    <li class="has-submenu">
+                        <a href="#" data-submenu="computer">Computer</a>
+
+                        <div id="computer" class="submenu">
+                            <div class="submenu-header" data-submenu-close="computer">
+                                <a href="#">Computer</a>
+                            </div>
+
+                            <label>Computer</label>
+
+                            <ul>
+                                <li class="has-submenu">
+                                    <a href="#" data-submenu="electronics">MS-OFFICE</a>
+
+                                    <div id="electronics" class="submenu">
+                                        <div class="submenu-header" data-submenu-close="electronics">
+                                            <a href="#">MS-OFFICE</a>
+                                        </div>
+
+                                        <label>MS-OFFICE</label>
+
+                                        <ul>
+                                            <li>
+                                                <a href="#">MS-Word</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">MS-Excel</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">MS-Powerpoint</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">MS-Access</a>
+                                            </li>
+
+
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <a href="#">Basic Computer </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Information Techonology (IT)</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Internet & Email etc</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="has-submenu">
+                        <a href="#" data-submenu="program">Programming Languages</a>
+
+                        <div id="program" class="submenu">
+                            <div class="submenu-header" data-submenu-close="program">
+                                <a href="#">Current Affairs</a>
+                            </div>
+
+                            <label>Programming Languages</label>
+
+                            <ul>
+                                <li>
+                                    <a href="#">Python</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Kotlin</a>
+                                </li>
+                                <li>
+                                    <a href="#">PHP</a>
+                                </li>
+                                <li>
+                                    <a href="#">Javascript</a>
+                                </li>
+                                <li>
+                                    <a href="#">Ruby</a>
+                                </li>
+                                <li>
+                                    <a href="#">Ruby</a>
+                                </li>
+
+
+
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="has-submenu">
+                        <a href="#" data-submenu="jobs">Latest Jobs <span class="badge badge-secondary">New</span></h5>
+                        </a>
+
+                        <div id="jobs" class="submenu">
+                            <div class="submenu-header" data-submenu-close="jobs">
+                                <a href="#">Latest Jobs <span class="badge badge-secondary">New</span></a>
+                            </div>
+
+                            <label>Latest Jobs <span class="badge badge-secondary">New</span></label>
+
+                            <ul>
+                                <li>
+                                    <a href="#">Government Jobs</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Private JObs</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#" data-submenu="others">Others</a>
+
+                        <div id="others" class="submenu">
+                            <div class="submenu-header" data-submenu-close="others">
+                                <a href="#">Others</a>
+                            </div>
+
+                            <label>Others</label>
+
+                            <ul>
+                                <li>
+                                    <a href="#">Islamic Studies</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Everday Science</a>
+                                </li>
+                                <li>
+                                    <a href="#">IQ</a>
+                                </li>
+                                <li>
+                                    <a href="#">Physics</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chemistry</a>
+                                </li>
+                                <li>
+                                    <a href="#">Mathematics</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="" data-toggle="modal" data-target="#loginModal">Login</a>
+                    </li>
+                    <li>
+                        <a href="">Signup</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- <nav class="navbar navbar-dark bg-primary p-0 pl-3 pr-3 "> -->
+            <nav class="navbar navbar-dark  p-0 pl-3 pr-3 ">
+                <a class="navbar-brand" href="#"><img src="img/Logo.png" width="40px" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                    aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+
+
+
+            <div class="zeynep-overlay"></div>
+
+            <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
+            <script src="script/jquery.zeynep.min.js"></script>
+            <script>
+                $(function () {
+                    // init zeynepjs
+                    var zeynep = $('.zeynep').zeynep({
+                        onClosed: function () {
+                            // enable main wrapper element clicks on any its children element
+                            $("body main").attr("style", "");
+
+                            // console.log('the side menu is closed.');
+                        },
+                        onOpened: function () {
+                            // disable main wrapper element clicks on any its children element
+                            $("body main").attr("style", "pointer-events: none;");
+
+                            // console.log('the side menu is opened.');
+                        }
+                    });
+
+                    // handle zeynep overlay click
+                    $(".zeynep-overlay").click(function () {
+                        zeynep.close();
+                    });
+                    $(".closer").click(function () {
+                        zeynep.close();
+                    });
+
+                    // open side menu if hamburger menu is clicked
+                    $("nav .navbar-toggler").click(function () {
+                        if ($("html").hasClass("zeynep-opened")) {
+                            zeynep.close();
+                        } else {
+                            zeynep.open();
+                        }
+                    });
+                });
+            </script>
+        </div>
+        <div class="secondnav">
+
+            <header class="">
+                <div class="nav__container " id="nav-cont">
+                    <div class="nav__mobile">
+                        <div class="nav__logo"><img src="img/Logo.png" alt=""></div>
+                        <div class="nav__btn">
+                            <a aria-label="Mobile menu" class="nav-toggle fade"><span></span><span
+                                    class="mrg"></span><span class="mrg"></span></a>
+                        </div>
+                    </div>
+                    <nav class="menu-toggle">
+                        <ul class="nav__menu">
+                            <li><a href="">Home</a></li>
+                            <li class="dropdown"><a href="#">Current Affairs</a>
+                                <ul>
+                                    <li><a href="">Pakistan Affairs</a></li>
+                                    <li><a href="">World Affairs</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">GK</a>
+                            </li>
+                            <li class="dropdown"><a href="#">English</a>
+                                <ul>
+                                    <li><a href="">Antonyms</a></li>
+                                    <li><a href="">Synonyms</a></li>
+                                    <li>
+                                        <a href="">Idioms & Phrase</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="#">Computer</a>
+                                <ul>
+                                    <li class="dropdown second-level">
+                                        <a href="#">MS-OFFICE</a>
+                                        <ul>
+                                            <li><a href="">MS-Word</a></li>
+                                            <li><a href="">MS-Powerpoint</a></li>
+                                            <li><a href="">MS-Excel</a></li>
+
+                                            <li>
+                                                <a href="">MS-Access</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="">BAsic Computer</a>
+                                    </li>
+                                    <li><a href="">Information Technology</a></li>
+                                    <li><a href="">Internet & Email</a></li>
+
+
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="#">Pogramming</a>
+                                <ul>
+
+                                    <li><a href="">PYTHON</a></li>
+                                    <li><a href="">RUBY</a></li>
+                                    <li><a href="">PHP</a></li>
+                                    <li><a href="">HTML</a></li>
+                                    <li><a href="">CSS</a></li>
+                                    <li><a href="">JAVACRIPT</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="#">Other</a>
+                                <ul>
+
+                                    <li><a href="">Islamic Studies</a></li>
+                                    <li><a href="">Everyday Science</a></li>
+                                    <li><a href="">IQ</a></li>
+                                    <li><a href="">Biology</a></li>
+                                    <li>
+                                        <a href="">Chemistry</a>
+                                    </li>
+                                    <li><a href="">Mathematics</a></li>
+                                    <li>
+                                        <a href="">Physics</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="#">Latest Jobs <span
+                                        class="badge badge-success">New</span></a>
+                                <ul>
+
+                                    <li>
+                                        <a href="">Governemnt Jobs</a>
+                                    </li>
+                                    <li><a href="">Private Jobs</a></li>
+
+
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="" data-toggle="modal" data-target="#loginModal">Login</a>
+                            </li>
+
+
+
+
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+
+
+
+        </div>
+
+
+
+
+        </div>
+
+    </section>
+
+    <!-- navbar ends here -->
+    <div id="quiz_page">
+        <div class="head container">
+            <h3><b>Arithmetical Reasoning </b>Practice Question and Answer</h3>
+        </div>
+
+        <div class="taxonomies container mt-3">
+            <div class="container">
+                <ul>
+                    <li> <a href="" class="item container"><i class="fas fa-folder-open"></i> Reasoning</a></li>
+                    <li> <a href="" class="item container"><i class="fas fa-folder-open"></i> Reasoning</a></li>
+                    <li> <a href="" class="item container"><i class="fas fa-folder-open"></i> Reasoning</a></li>
+                    <li> <a href="" class="item container"><i class="fas fa-folder-open"></i> Reasoning</a></li>
+                    <li> <a href="" class="item container"><i class="fas fa-folder-open"></i> Reasoning</a></li>
+                    <li> <a href="" class="item container"><i class="fas fa-folder-open"></i> Reasoning</a></li>
+                    <li> <a href="" class="item container"><i class="fas fa-folder-open"></i> Reasoning</a></li>
+                    <li> <a href="" class="item container"><i class="fas fa-folder-open"></i> Reasoning</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="title container">
+            <div class="total">
+                <p> Total Questions 98</p>
+            </div>
+            <div class="pages">
+                <p> Showing Page 1 Of 22 </p>
+            </div>
+        </div>
+        <div class="border container"></div>
+
+
+    </div>
+
+    <div id="category" class="d-none">english</div>
+    <section id="body" class="container d-flex">
+        <section id="questions">
+            <!-- <section class="question container mt-3">
+
+                <div class="user">
+                    <div class="watch">
+                        <div class="eye mr-3">
+                            <p href=""><i class="fas fa-eye"></i><span>1.2k</span></p>
+                        </div>
+                    </div>
+                    <div class="like mr-3">
+                        <i class="fas fa-thumbs-up"></i>
+                    </div>
+                    <div class="fav mr-3">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="question-title">
+                    <p>
+                        <span>Q:</span> French revolution began in:
+                    </p>
+                </div>
+                <ul class="options">
+                    <li  class="option"><div class="option1 container wrong"> <span>A.</span> 1789</div></li>
+                    <li class="option"><div class="option2 container wrong"> <span>B.</span> 1790</div></li>
+                    <li class="option"><div class="option3 container right"> <span>C.</span> 1791</div></li>
+                    <li class="option"><div class="option4 container wrong"> <span>D.</span> 1792</div></li>
+                </ul>
+                <div class="report mr-3 mt-1">
+                    <i class="fas fa-exclamation-triangle report-c"></i>
+                </div>
+                <div class="check-ans">
+
+                    <a data-toggle="collapse" data-target="#q1" href=""><i
+                            class="fas fa-hand-pointer mr-2 show"></i>Show Answer</a>
+                    <a data-toggle="collapse" data-target="#q1" href="" class="second"><i
+                            class="fas fa-hand-pointer mr-2"></i>Hide Answer</a>
+
+                    <div id="q1" class="collapse answer">
+                        Answer A:1789
+                    </div>
+                </div> -->
+
+            </section>
+          
+           
+           
+
+            <section id="tags" class="container">
+                <div class="head">
+                    <h2>Taxonomies</h2>
+                </div>
+                <div class="body">
+                    <ul class="tags">
+                        <li><a href="#" class="tag">Latest Jobs </a></li>
+                        <li><a href="#" class="tag">Computer Programming</a></li>
+                        <li><a href="#" class="tag">General knowledge </a></li>
+                        <li><a href="#" class="tag">English </a></li>
+                        <li><a href="#" class="tag">Competitive Exams </a></li>
+                        <li><a href="#" class="tag">Computer </a></li>
+                        <li><a href="#" class="tag">Government Jobs</a></li>
+                        <li><a href="#" class="tag">Private Jobs</a></li>
+                        <li><a href="#" class="tag">PHP</a></li>
+                        <li><a href="#" class="tag">Javascript</a></li>
+                        <li><a href="#" class="tag">Python</a></li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+    </section>
+        
+
+
+    <!-- footer -->
+    <div class="modal fade" id="report-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="flase">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title " id="exampleModalLabel">Report Question </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="partials/_reported_question.php?cat=<?php echo$subcat;?>" method="POST">
+                        <div class="form-group">
+                           
+                                    echo '<input class="form-control" type="text" name="'.$subcat.'" placeholder="Report question from '.$categry.'" readonly>
+                                   
+                                    <textarea name="problem" class="form-control mt-1" id="report" rows="3" placeholder="Mention your Problem Here" required></textarea>;
+                              
+                                  <label for="exampleFormControlTextarea1">Please login to report the question</label>;
+                         
+                      
+                            
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>;
+                      
+                        </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script/app.js"></script>
+<script src="script/quiz.js"></script>
+</html>

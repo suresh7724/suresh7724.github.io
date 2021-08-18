@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/824ffb723a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/common.css">
+    <title>Home</title>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <ul class="links">
+            <li class="link-item"> <a href="index.html" class="active">Home</a></li>
+            <li class="link-item"> <a href="about.html">About</a></li>
+            <li class="link-item"> <a href="history_of_internet.html">History of Internet</a></li>
+            <li class="link-item"> <a href="html_table.html">HTML</a></li>
+            <li class="link-item"> <a href="css_table.html">CSS</a></li>
+            <li class="link-item"> <a href="human_computer.html">Human Computer</a></li>
+            <li class="link-item"> <a href="multimedia_and_graphics.html">Multimedia</a></li>
+            <li class="link-item"> <a href="Packet_tracer.html">Packet Tracer</a></li>
+            <li class="link-item"> <a href="reference.html">Reference</a></li>
+            <li class="link-item"> <a href="internet_routing_protocols.html">TCP/IP</a></li>
+            <li class="link-item"> <a href="website_design.html">Web Design</a></li>
+            <li class="link-item"> <a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <p>Although there are many types of IP's  but Three major class IP's used widspread on IP networks</p>
+        <ul>
+            <li>Interior Gatewway Protocols type 1</li>
+            <li>Interior Gatewway Protocols type 2</li>
+            <li>Exterior Gateway Protocols </li>
+        </ul>
+        <p>
+            IP routing describes the process of transfer of data from on computer or server to another computer or server. A packet of data traverses from its root source to accorss many network until it finally reach at its deestination using a routing algorithm. When packet starts it's journey it divides into many parts and each and every packet tavels individual to it's destination.
+            TCP/IP is known as Internet Protocol suite , is a collectio of communication protocols that use internet connectivity to send an receive data. A protocol defines rules of commnunication while data is being traversed from one server to another server.IP deals with the sending and receving data of the packets from one server to another server using web of routers in a process known as IP Routing. Once the packet reaches at it's final destination TCP refoems packets in their original form. 
+        </p>
+        <img src="images/how-ip-routing-works-diagram-1.png" alt="">
+        <p><b>OSI Layer Designation</b></p>
+        <p> &nbsp; OSI layer consits of 7 diffrenet layers  </p>
+        <p>
+            This is the Normal structure of OSI layer Designation
+        </p>
+        <ul>
+            <li>Layer 7 : Application</li>
+            <li>Layer 6 : Presentation</li>
+            <li>Layer 5 : Session</li>
+            <li>Layer 4 : Transport</li>
+            <li>Layer 3 : Network</li>
+            <li>Layer 2 : Data Link</li>
+            <li>Layer 1 : Physical</li>
+        </ul>
+        <p>Each and every layer has their own property and protocols to handle data when it is being transferred.</p>
+        <p><b>Interior & Exterior Routing Protocols</b></p>
+        <p>An interior gateway protocols (IGP) is used to route the traffic within each separate network of an autonomous system (AS). The working of a distance vector routing protocol helps the routers to exchange their link information with immediate neighbors and update their routing table. In a link state protocol, the router exchanges its network topology information in terms of its links and interfaces with its neighbors</p>
+
+        <p>Exterior Gateway Protocol (EGP) is a protocol for exchanging routing information between two neighbor gateway hosts (each with its own router) in a network of autonomous systems. EGP is commonly used between hosts on the Internet to exchange routing table information. The routing table contains a list of known routers, the addresses they can reach, and a cost metric associated with the path to each router so that the best available route is chosen. Each router polls its neighbor at intervals between 120 to 480 seconds and the neighbor responds by sending its complete routing table. </p>
+
+        <p><b>How NAT Works?</b></p>
+        <p>NAT stands for "Network Adress Translation"</p>
+        <p>Let's assume there is on PC . You have searched to download any type of software into your PC. Then your PC sends request in a packet to a router which , goes thorugh web. When You locates that actual file and click on download button it means that you want to download that file on your local machine but your address is not public. You are working through private router tehn How will that packet know where to send file? By using "NAT" That file will be back to the PC using PC's Public adress not private.</p>
+
+        <p><b>DNS HIARCHY </b></p>
+        <p>IPv4 is a version 4 of IP. It is a current version and the most commonly used IP address. It is a 32-bit address written in four numbers separated by 'dot', i.e., periods. This address is unique for each device.
+            IPv4 produces 4 billion addresses, and the developers think that these addresses are enough, but they were wrong. IPv6 is the next generation of IP addresses. The main difference between IPv4 and IPv6 is the address size of IP addresses. The IPv4 is a 32-bit address, whereas IPv6 is a 128-bit hexadecimal address. IPv6 provides a large address space, and it contains a simple header as compared to IPv4.
+            IPv4 is a numeric address that consists of 4 fields which are separated by dot (.) whereas IPv6 is an alphanumeric address that consists of 8 fields, which are separated by colon.
+            IPv4 has 5 different classes of IP address that includes Class A, Class B, Class C, Class D, and Class E but IPV6 doesn't contains any classes.IPV4  supports manual and DHCP configuration. IPV6 also supports  manual and DHCP configuration . In addition It also supports auto-configuration and renumbering.
+            IPV4 can generate 4 Billion uqique addresses while IPV6 generates 340 undecillion unique addresses.   
+        </p>
+        <p><b>Static and dynamic routing</b></p>
+        <p><ul class="routing">
+            <li>In static routing, routing tables are manually updated, while in dynamic routing, tables are automatically updated.</li>
+            <li>The static routing is best for small network implementation and star topologies. It is not as good for any other topologies. Whereas dynamic routing is best for a large network implementation. it is good for network topologies that consist of redundant links.</li>
+            <li>Static Routing requires less bandwidth than dynamic routing, where dynamic routing requires large bandwidth.</li>
+            <li>In static routing routes, the path is updated by the user or an administrator, while in dynamic routing, routes are updated automatically.
+            </li>
+            <li>Static Routing does not use any routing protocols and algorithms, while dynamic routing uses routing protocols and complex algorithms to calculate routing operations.</li>
+            <li>In static routing, routes not react with network changes, while in dynamic routing, routes react with network changes.</li>
+        </ul></p>
+    </div>
+    <footer id="footer">
+        <div class="footer">
+        <div class="row">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+        
+        <div class="row">
+        <ul>
+            <li><a href="#">History Of  Internet</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        <li><a href="html_table.html">HTML</a></li>
+        <li><a href="css_table.html">CSS</a></li>
+        </ul>
+        </div>
+        
+        <div class="row">
+         <a href="mailto:yourmail@mail.com">yourmail@mail.com</a>
+        </div>
+        </div>
+        </footer>   
+    <script src="script/home.js"></script>
+    <script src="script/quiz.js"></script>
+</body>
+</html>

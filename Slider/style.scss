@@ -1,0 +1,203 @@
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+
+body {
+	font-family: Montserrat,sans-serif;
+  margin-top: 50px;
+}
+
+.container{
+  display: flex;
+  
+  .card{
+    flex: 1;
+    text-align: center;
+    position: relative;
+    width: 80%;
+    border: none !important;
+    margin: auto;
+    .list-group {text-align: left;}  
+        
+    .title{
+      text-transform: uppercase;
+      font-size: 25px;
+      font-weight: bold;
+      padding:4px;
+      width: 80%;
+      max-width: 170px;
+      margin: auto;
+      box-sizing: border-box;
+      background-color: #000000;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      color: #ffffff;
+      position: relative;
+      z-index: 1;
+      box-shadow: 0px 5px 10px rgba(0,0,0,0.25);
+      
+
+      span{
+        display: block;
+        font-size: 50px;
+        font-weight: normal;
+      }
+
+      &:before, &:after{
+        content: '';
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        border: 12px solid transparent;
+        border-top-color: #000000;
+        top: 5px;
+      }
+
+      &:before{
+        transform: rotate(-45deg);
+        left: -12px;
+      }
+
+      &:after{
+        transform: rotate(45deg);
+        right: -12px;
+      }
+    }
+
+    .content{
+      margin-top: -105px;
+      padding: 125px 20px 50px 20px;
+      box-shadow: inset 0px 15px 10px -12px rgba(0,0,0,0.5);
+    }
+    
+    
+    .icon{
+      font-size: 50px;     
+    }
+    
+    &:nth-child(1){
+      .title{
+        background-color: #044687;
+        &:before, &:after{
+          border-top-color: #2b7fc0;
+        }
+      }
+      .icon{
+        color: #044687;
+      }
+    }
+    &:nth-child(2){
+      .title{
+        background-color: #1C7BBB;
+        &:before, &:after{
+          border-top-color: #105888;
+        }
+      }
+      .icon{
+        color: #1C7BBB;
+      }
+    }
+    &:nth-child(3){
+      .title{
+        background-color: #044687;
+        &:before, &:after{
+          border-top-color: #2b7fc0;
+        }
+      }
+      .icon{
+        color: #044687;
+      }
+    }
+    &:nth-child(4){
+      .title{
+        background-color: #1C7BBB;
+        &:before, &:after{
+          border-top-color: #105888;
+        }
+      }
+      .icon{
+        color: #1C7BBB;
+      }
+    }
+    &:nth-child(5){
+      .title{
+        background-color: #044687;
+        &:before, &:after{
+          border-top-color: #2b7fc0;
+        }
+      }
+      .icon{
+        color: #044687;
+      }
+    }
+  }
+
+}
+#slider
+{
+  position: relative;
+  
+}
+
+.control i
+{
+  color: #fff;
+  background-color: #000000;
+  font-size: 2rem;
+  border-radius: 20px;
+  opacity: .7;
+  border: 1px sold #000;
+  
+}
+.carousel-item
+{
+  height: 500px;
+}
+.container
+{
+  @media (max-width:768px){
+    flex-wrap: wrap;
+    
+    .card{
+      flex: 0 0 100%;
+    }
+  }
+  
+}
+
+#slider
+{
+  display: none;
+}
+.carousel .carousel-indicators
+{
+  position: absolute;
+  top: 104% !important;
+}
+.carousel .carousel-indicators li {background-color: #044687;}
+.carousel .carousel-indicators li.active {background-color: blue;}
+@media (max-width: 768px) {
+  #slider
+  {
+    display: block;
+  }
+  #info
+  {
+    display: none;
+  }
+  .container
+  {
+    .card
+    {
+      height: auto !important;
+    }
+  }
+}
+@media(min-width: 768px) {
+  .container
+  {
+    .card
+    {
+      height: 500px !important;
+    }
+  }
+}

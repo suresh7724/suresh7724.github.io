@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#page {
+  background-color: white;
+}
+
+#page .description {
+  margin-left: 40px;
+}
+
+#page .image {
+  width: 100%;
+}
+
+#page .image img {
+  width: 100%;
+}
+
+#page p {
+  font-size: 17px;
+}
+
+#page .title {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+#page .next button {
+  border: none;
+  font-size: 23px;
+  border: 2px solid transparent;
+  margin: 30px;
+}
+
+#page .next button:hover {
+  -webkit-transition: ease 1s all;
+  transition: ease 1s all;
+  border: 2px solid #72066b;
+  background-color: #72066b;
+}
+
+#page .next button:hover a {
+  color: white;
+}
+
+@media screen and (max-width: 1015px) {
+  #page .content .description {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #page .content {
+    margin: 0px;
+    padding: 0px;
+  }
+  #page .content .description {
+    margin-left: 0px;
+  }
+  #page .content .title {
+    margin-bottom: 10px;
+  }
+}
+/*# sourceMappingURL=project.css.map */

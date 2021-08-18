@@ -1,0 +1,38 @@
+.row
+{
+    width: 50%;
+    margin: 30px auto;
+    .input-group
+    {
+        display: flex;
+        flex-direction: column;
+        input{
+            width: 100%;
+            // background-color: green;
+        }
+    }
+}
+#random_numbers
+{
+    max-width: 50%;
+    .wrap
+    {
+
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px auto;
+    .number
+    {
+        border: 1px solid black;
+        width: 40px;
+        height: 40px;
+        margin: 50px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+}
+// background-color: #ee6c6cea ;
+}

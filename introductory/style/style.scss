@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body{
+    padding: 0px;
+    margin: 0px;
+    scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+    background-color:#FFFBFC;
+}
+input
+{
+    background-color:#FFFBFC;
+
+}
+img{
+    width: 100%;
+}
+a:hover{
+    text-decoration: none;
+}
+.logo
+{
+    margin: 30px 20px;
+}
+#main
+{
+    .title
+    {
+        border-bottom: 1px solid #EEEEEE;
+        width: fit-content;
+        margin:50px auto;
+    }
+}
+
+// contact section
+#contact
+{
+    margin: 50px 0px;
+    .box{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 30px;
+    }
+    .social
+    {
+        margin: 20px 0px;
+        a{
+            color: #344E99;
+            transition: ease .4s;
+            i{
+                transition: ease .2s;
+                box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+            border-radius: 50%;
+            padding: 12px 12px;
+            font-size: 1.2rem;
+            }
+            &:hover{
+                color: #fff;
+                i{
+                background-color: #344E99;
+                }
+            }
+        }
+    }
+    .user-input-wrp {
+        position: relative;
+        width: 100%;
+        margin: 20px 0px;
+    }
+    .user-input-wrp .inputText{
+        width: 100%;
+        outline: none;
+        border:none;
+        border-bottom: 1px solid #ccc;
+         box-shadow: none !important;
+         transition: ease .1s;
+    }
+    .user-input-wrp .inputText:focus{
+        border-color: blue;
+        border-width: medium medium 2px;
+    }
+    .user-input-wrp .floating-label {
+        position: absolute;
+        pointer-events: none;
+        top: 18px;
+        left: 10px;
+        transition: 0.3s ease all;
+        color: #ccc;
+    }
+    .user-input-wrp input:focus ~ .floating-label,
+    .user-input-wrp input:not(:focus):valid ~ .floating-label{
+        top: 0px;
+        left: 10px;
+        font-size: 13px;
+        opacity: 1;
+    }
+    .button
+    {
+        display: flex;
+        justify-content: flex-end;
+        button{
+            outline: none;
+            border: 1px solid transparent;
+            background-color: #40589F;
+            color: #fff;
+            padding: 8px 24px;
+            border-radius: 22px;
+            font-size: 1.1rem;
+            transition: ease .4s;
+            &:hover
+            {
+                color: #40589F;
+                background-color: #fff;
+                border: 1px solid #344E99;
+            }
+        }
+    }
+}
+.top
+{
+    i{
+        font-size: 2.1rem;
+        margin: 0px 15px;
+        color: #ccc;
+    }
+    .name
+    {
+        font-size: 1.1rem;
+        color: #ccc;
+    }
+    a{
+        color: #000;
+    }
+    .details
+    {
+        margin-top: -1px;
+    }
+}
+.page
+{
+    li{
+        border-right: 1px solid #ccc;
+        padding-right: 10px;
+        a{
+            color: #000;
+            transition: ease .4s;
+            font-weight: 600;
+            font-size: 1.1rem;
+            &:hover
+            {
+                color: #344E99;
+            }
+        }
+        .active
+        {
+            color: #344E99;
+        }
+    }
+}
+.we
+{
+    list-style: disc;
+}
+
+#footer
+{
+    background-color: #FEF3F1;
+    padding: 45px;
+    ul{
+        li{
+            padding-left: 20px;
+            margin: 14px 0px;
+            a{
+                color: #000;
+            }
+        }
+    }
+}
+.copyright
+{
+    margin-top: 30px;
+    padding: 30px;
+    font-size: 1.1rem;
+    background-color: #F2F3F5;
+}
+.top-dec,.bottom
+{
+    margin: 10px 0px;
+    a{
+        color: #000;
+        text-decoration: underline;
+        margin: 0px 20px;
+    }
+    i{
+        border: 1px solid;
+        padding: 7px;
+        margin-right: 10px;
+        color: #344E99;
+    }
+}
+/* Set the size of the div element that contains the map */
+#map {
+    height: 700px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }

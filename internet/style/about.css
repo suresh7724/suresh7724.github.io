@@ -1,0 +1,26 @@
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+i {
+  color: darkviolet;
+  font-size: 1.4rem;
+  margin: 20px 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 80% !important;
+  }
+}
+/*# sourceMappingURL=about.css.map */

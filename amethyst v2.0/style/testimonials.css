@@ -1,0 +1,17 @@
+.container .content-1 .col {
+  background-color: #fff;
+  margin-bottom: 24px;
+}
+
+.container .content-1 .checked {
+  color: orange;
+}
+
+.container .content-1 .ratings {
+  margin-left: 25px;
+}
+
+.container .content-1 p {
+  font-size: 1rem;
+}
+/*# sourceMappingURL=testimonials.css.map */

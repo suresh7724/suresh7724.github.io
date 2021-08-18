@@ -1,0 +1,124 @@
+/* General Resets */
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: "Arial", sans-serif;
+	line-height: 1.4;
+}
+#page{
+.row {
+	/* flex stuff */
+	display: flex;
+	flex-wrap: wrap;
+
+	/* general styling */
+	overflow: hidden;
+	margin: 3rem auto;
+	padding: 2rem 1rem;
+	max-width: 1200px;
+	background: #eee;
+
+	.col {
+		/* this is the flexbox stuff */
+		display: flex;
+		align-items: flex-start; /* this is aligning the content to the left of the box */
+		justify-content: center; /* this vertically aligns all content in the center of the box */
+		flex-direction: column; /* this makes all the content stack within the box */
+		flex: 0 0 calc(100% - 2rem);
+		max-width: calc(100% - 2rem);
+		/* this flex and max-width above make the cols full width for mobile etc. you'll see where I set it to 50% for browser width above 767.98px */
+
+		/* general styling */
+		margin: 0 1rem;
+		background: #fff;
+
+		/* takes care of the smooth slide */
+		transition: transform 0.5s ease-in-out;
+
+		&.p-2 {
+			padding: 2rem; /* just a class for padding on the boxes without an image */
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover; /* this makes the image fill the box proportionately */
+		}
+		button {
+			display: inline-block;
+			padding: 1rem;
+			background: #529fb8;
+			border: none;
+			text-transform: uppercase;
+			letter-spacing: 0.05rem;
+			font-weight: 700;
+			color: #fff;
+		}
+	}
+}
+
+/* ipads and desktops */
+@media (min-width: 768px) {
+	.row {
+		flex-wrap: nowrap; /* this makes the boxes span across without wrapping to a new line */
+		.col {
+			/* these two keep them all at 50% side and the -2rem is to account for the margins i set for spacing on the cols */
+			flex: 0 0 calc(50% - 2rem);
+			max-width: calc(50% - 2rem);
+		}
+
+		/* when button is clicked, add an active class to the row */
+		&.box-active {
+			.col {
+				transform: translateX(calc(-100% - 2rem));
+				&:last-of-type {
+					transform: translateX(calc(-100% - 2rem));
+				}
+				/* the -2rem in the calc is accounting for the column margins for spacing. You wouldn't need those if you want your boxes without spacers */
+			}
+		}
+		/* this stuff is just to show you a fun way to switch the order of the columns without actually doing it in HTML. if you look at the html the two rows are exactly the same structure but a fun "order:" with flex-box allows you to change that. */
+		&:nth-child(even) {
+			.col {
+				transform: translateX(calc(-100% - 2rem));
+				&:nth-child(1) {
+					order: 3;
+				}
+				&:nth-child(2) {
+					order: 2;
+				}
+				&:last-of-type {
+					transform: translateX(calc(-100% - 2rem));
+					order: 1;
+				}
+			}
+			&.box-active {
+				.col {
+					transform: translateX(0);
+					&:last-of-type {
+						transform: translateX(0);
+					}
+				}
+			}
+		}
+		/* end order stuff */
+	}
+}
+
+/* Responsive stacks for mobile and ipads etc. can change this width size to whatever you prefer */
+@media (max-width: 767.98px) {
+	.row {
+		height: calc(600px + 6rem);
+		.col {
+			margin-bottom: 2rem;
+			height: 300px;
+		}
+		&.box-active {
+			.col {
+				transform: translateY(calc(-100% - 2rem));
+			}
+		}
+	}
+}
+}

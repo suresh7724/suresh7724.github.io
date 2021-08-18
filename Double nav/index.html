@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.2.1/darkly/bootstrap.min.css">
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"> -->
+
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/58f2eeec39.js" crossorigin="anonymous"></script>
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/nav.css">
+
+    <title>Tab Contro Navbar</title>
+</head>
+
+<body>
+    <header id="head">
+        <div id="adress">
+            <div class="list-item">
+                <div class="icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <a href="#">
+
+                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo ad nesciunt</span>
+                </a>
+            </div>
+            <div class="list-item">
+                <div class="icon">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <a href="#">
+
+                    <span>
+                        +0 12345690
+                    </span>
+                </a>
+            </div>
+            <div class="list-item">
+                <div class="icon">
+                    <i class="far fa-clock"></i>
+                </div>
+                <a href="#">
+
+                    <span>
+                        monday-saturday(9am - 9pm)
+                    </span>
+                </a>
+            </div>
+            <div class="list-item ml-auto">
+                <a href="#">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-primary" id="main_navbar">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <button tabindex="1" class="burger navbar-toggler" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <canvas class="bar-2"></canvas>
+                <canvas class="bar-1"></canvas>
+                <canvas class="bar-3"></canvas>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="top">
+                    <div class="top-item">
+                        <img src="img/apple_logo.png" alt="">
+                        <!-- <h2>logo</h2> -->
+                    </div>
+                    <div class="top-item">
+                        <i class="far fa-envelope-open"></i>
+                        <a href="mailto:example@mail.com">Mail us example@mail.com</a>
+                    </div>
+                    <div class="top-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <a href="#">
+                            Lorem ipsum dolor sit amet consectetur.
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="#">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- <h2 class="text-white logo">logo</h2> -->
+                <!-- <img src="img/apple_logo.png" class="logo" alt=""> -->
+                <ul class="navbar-nav" role="menu">
+                    <!-- <li class="nav-item">
+                    <a class="nav-link close-burger" href="#" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Home</a>
+                </li>  -->
+                    <li class="nav-item dropdown top_menu">
+                        <a class="nav-link dropdown-toggle main_nav" href="#" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu first_sub">
+                            <li data-toggle="collapse" data-target="#navbarSupportedContent"
+                                aria-controls="navbarSupportedContent" aria-expanded="false"
+                                class="close-burger drop-link"><a class="dropdown-item sub-menu" href="#first">First
+                                    Section</a>
+                            </li>
+                            <li data-toggle="collapse" data-target="#navbarSupportedContent"
+                                aria-controls="navbarSupportedContent" aria-expanded="false"
+                                class="drop-link close-burger"><a class="dropdown-item sub-menu" href="#second">Second
+                                    Section</a></li>
+                            <li>
+                            <li data-toggle="collapse" data-target="#navbarSupportedContent"
+                                aria-controls="navbarSupportedContent" aria-expanded="false"
+                                class="drop-link close-burger">
+                                <a class="dropdown-item sub-menu" href="#third">Third Section</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="dropdown-item dropdown-toggle sub-menu  sub-drop" href="#" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-label="Toggle navigation">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu ">
+                                    <li><a class="dropdown-item sub-menu" href="#">Action</a></li>
+                                    <li><a class="dropdown-item sub-menu" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item sub-menu" href="#">Something else here</a></li>
+                                    <li class="nav-item dropdown">
+                                        <a class="dropdown-item dropdown-toggle sub-menu sub-drop" href="#" id="navbarDropdown2"
+                                            role="button" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            Dropdown
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item sub-menu" href="#">Action</a></li>
+                                            <li><a class="dropdown-item sub-menu" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item sub-menu" href="#">Something else here</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown top_menu">
+                        <a class="nav-link dropdown-toggle main_nav" href="#" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu first_sub">
+                            <li><a class="dropdown-item sub-menu" href="#">Action</a></li>
+                            <li><a class="dropdown-item sub-menu" href="#">Another action</a></li>
+                            <li>
+                                <a class="dropdown-item sub-menu" href="#">Something else here</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="dropdown-item dropodown-toggle sub-menu sub-drop" href="#" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item sub-menu" href="#">Action</a></li>
+                                    <li><a class="dropdown-item sub-menu" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item sub-menu" href="#">Something else here</a></li>
+                                    <li class="nav-item dropdown">
+                                        <a class="dropdown-item dropdown-toggle sub-menu sub-drop" href="#" role="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Dropdown
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item sub-menu" href="#">Action</a></li>
+                                            <li><a class="dropdown-item sub-menu" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item sub-menu" href="#">Something else here</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown top_menu">
+                        <a class="nav-link dropdown-toggle main_nav" href="#" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu first_sub">
+                            <li><a class="dropdown-item sub-menu" href="#">Action</a></li>
+                            <li><a class="dropdown-item sub-menu" href="#">Another action</a></li>
+                            <li>
+                                <a class="dropdown-item sub-menu" href="#">Something else here</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="dropdown-item dropdown-toggle sub-menu sub-drop" href="#" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item sub-menu" href="#">Action</a></li>
+                                    <li><a class="dropdown-item sub-menu" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item sub-menu" href="#">Something else here</a></li>
+                                    <li class="nav-item dropdown">
+                                        <a class="dropdown-item dropdown-toggle sub-menu sub-drop" href="#" role="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Dropdown
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item sub-menu" href="#">Action</a></li>
+                                            <li><a class="dropdown-item sub-menu" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item sub-menu" href="#">Something else here</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown top_menu">
+                        <a class="nav-link dropdown-toggle main_nav" href="#" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu first_sub">
+                            <li><a class="dropdown-item sub-menu" href="#">Action</a></li>
+                            <li><a class="dropdown-item sub-menu" href="#">Another action</a></li>
+                            <li>
+                                <a class="dropdown-item sub-menu" href="#">Something else here</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="dropdown-item dropdown-toggle sub-menu sub-drop" href="#" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item sub-menu" href="#">Action</a></li>
+                                    <li><a class="dropdown-item sub-menu" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item sub-menu" href="#">Something else here</a></li>
+                                    <li class="nav-item dropdown">
+                                        <a class="dropdown-item dropdown-toggle sub-menu sub-drop" href="#" role="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Dropdown
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item sub-menu" href="#">Action</a></li>
+                                            <li><a class="dropdown-item sub-menu" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item sub-menu" href="#">Something else here</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+<section id="first">
+    <h2>first</h2>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. In totam, distinctio inventore consequuntur porro accusamus laboriosam deserunt architecto. Voluptatum, molestiae minus natus tempora culpa exercitationem necessitatibus voluptas in sunt, laborum optio recusandae illum architecto cum aliquid error vel velit! Qui saepe illum consequatur, fugit praesentium dolorum ullam nemo dicta at velit odit, fugiat cupiditate ipsa, suscipit quas tenetur rem. Quidem quos aliquam accusantium quia rem inventore nam harum non corrupti quisquam, obcaecati ullam doloribus, sequi expedita! Minus in enim reprehenderit ad hic tempora beatae inventore quasi blanditiis dolore laudantium provident voluptatibus sunt, velit rem rerum ut fuga iste doloribus eveniet accusamus sint. Cupiditate illo, sunt veniam non et culpa delectus eius ullam. Quas, eum aut veniam, vitae corrupti dolorem aliquam quisquam dolores rem, similique sequi. Exercitationem placeat debitis, aspernatur distinctio voluptatibus doloribus est laboriosam? Magnam quam sint quod dolorem, fuga aspernatur alias fugiat, itaque expedita, aperiam distinctio accusantium doloribus illo suscipit amet officiis deserunt eius reprehenderit voluptatibus dolores incidunt tempora. Excepturi, aut. Deleniti illo dolorum exercitationem a aperiam itaque ut tempore nisi aliquid aspernatur. Ipsam, quis quibusdam saepe, ab aut a, harum sapiente in molestiae porro nulla. Quibusdam numquam aspernatur reprehenderit doloremque quaerat aut officiis debitis nostrum adipisci possimus impedit aperiam veritatis mollitia, eligendi quos perspiciatis facilis fugiat deleniti tenetur maxime. Soluta eum obcaecati natus deleniti debitis magni accusamus nam facere nisi molestias itaque expedita ipsam, labore beatae voluptate minima. Voluptas suscipit tempora, iste quam commodi delectus laboriosam, odit veritatis tempore, officiis est soluta esse cumque nesciunt laborum ipsa eum voluptates doloribus sapiente quia beatae praesentium placeat maxime ratione. Reprehenderit, nostrum deserunt exercitationem repellat quidem dicta, facere velit labore quisquam facilis et aperiam voluptatibus nisi officiis dolorem ea molestiae dignissimos ut pariatur? Animi unde, quia sed nisi repellendus quae reiciendis rem nihil. Dolor saepe ea beatae fugit soluta ullam, tenetur corporis excepturi enim. Consequatur voluptas nemo blanditiis porro officia sint ut asperiores ex, quis, quibusdam perferendis vel quasi laborum quas a, reprehenderit fugiat autem modi error! Nesciunt nobis debitis hic maxime incidunt soluta tempore aspernatur laborum reiciendis rem cum eius, illo quaerat eveniet non vel. Natus alias nihil debitis soluta, libero ipsam rem doloremque. Eaque delectus id, officia omnis suscipit fugiat magni ad fuga! Voluptatibus cupiditate dolorum illo consequatur et maiores animi provident, sapiente quibusdam, dicta, exercitationem ratione porro ea voluptate alias beatae veritatis harum cumque perspiciatis quasi odit. Sunt, libero perspiciatis dignissimos itaque in quia illo, dolores iusto ipsam officiis sit quas ut numquam dolorum consectetur similique maxime facilis aliquid non doloribus repellat, labore cumque! Mollitia unde rem commodi explicabo sapiente nam incidunt molestias maxime hic. Consequatur accusamus ut laudantium. Neque maxime odit aspernatur commodi? Totam similique molestiae ea veritatis nisi quasi, odio, accusamus officia numquam doloremque, voluptas aperiam illo asperiores est minima odit dolor illum architecto sunt velit fugit ullam possimus debitis magnam! Ipsam, asperiores fugiat neque temporibus cupiditate beatae harum atque quos sunt quod, ad quo est voluptatem nisi, odio omnis similique cum! Magnam quos eaque id unde voluptatem repellat dolor provident deleniti odio, voluptatum cupiditate maiores!
+</section>
+<section id="second">
+    <h2>seonnd</h2>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur neque minima quos reprehenderit ex doloremque hic, velit rem asperiores, esse totam quibusdam veritatis omnis culpa, modi similique voluptatibus vel corporis incidunt. Delectus ipsum aspernatur at ipsam id praesentium, voluptatibus iure? Facilis eos excepturi ad? Aliquam aliquid necessitatibus ut magnam doloremque, nisi hic voluptatum soluta unde omnis porro similique, dolores velit nulla, dolor fugit dignissimos iste voluptatem cum doloribus! Tempore explicabo voluptas, laborum ea quisquam unde blanditiis fugit omnis deserunt quo? Laboriosam minima eius error minus quasi doloremque at dicta sequi magni ex architecto accusamus quam quod sint, similique inventore, id fugiat repudiandae aliquid aperiam fugit assumenda delectus ab. Cupiditate, odit. Perspiciatis placeat illum ex dolore sunt maxime nemo provident, quasi, voluptate commodi aut optio architecto quibusdam qui natus pariatur in numquam. Adipisci alias, totam repellendus, voluptatum corporis asperiores praesentium voluptatem incidunt consequatur labore perferendis? Eveniet, vel? Consectetur porro in commodi voluptas officia fugiat magni dolore fugit optio sint. Voluptatibus repellendus adipisci minima magni quibusdam, possimus nulla dolorum consequuntur modi vitae impedit aperiam error optio itaque natus ipsum similique inventore odit dignissimos distinctio nisi minus dolore molestias. Facere nihil officia quis veniam quos! Eligendi quaerat nemo deleniti accusantium cupiditate quod consequuntur, ducimus dignissimos culpa beatae at labore omnis. Dicta, optio eligendi provident minus id, non harum cupiditate ad eveniet voluptatem quas similique fugit dolorum nesciunt vero, repellat exercitationem facilis magnam autem. Inventore qui facilis nostrum saepe provident ducimus alias cumque doloribus. Fugit odit molestias maxime deserunt commodi assumenda quam, expedita ad veniam temporibus amet aspernatur saepe exercitationem quidem optio, repudiandae nemo soluta quo adipisci ipsa inventore cupiditate. Aliquam tenetur in et magni unde totam sequi, nemo blanditiis error, perspiciatis facere ab quas, dolorem voluptate ex eos non quasi accusamus. Error adipisci quisquam quo soluta ut facere dolor totam. Deserunt ea quasi quidem neque tenetur rem ad architecto culpa dolor soluta quo, animi officia optio quas, necessitatibus ipsum! Ea ipsum odit quaerat modi, possimus sequi ipsa in nemo aut fugiat molestiae provident autem debitis similique nisi sunt culpa cum officia quae suscipit atque veritatis minima ullam! Recusandae iure ducimus nulla assumenda quisquam exercitationem repudiandae officia deserunt accusamus optio. Exercitationem, itaque! Possimus ducimus impedit eius placeat vitae perferendis nisi quos recusandae esse qui eaque ullam hic suscipit, beatae, ratione voluptatibus incidunt nesciunt consectetur molestias velit pariatur sequi quasi temporibus et! Suscipit consectetur distinctio natus voluptatibus necessitatibus delectus nulla quam eveniet magnam vitae, praesentium nisi incidunt illo dolorum, dignissimos nostrum ipsam doloribus, minima pariatur? Saepe reiciendis libero, vitae similique culpa asperiores, pariatur laborum quo earum beatae esse aliquam ratione quibusdam numquam sit cum doloremque ex molestiae neque! Ratione adipisci modi iure voluptatibus illum minus beatae sapiente quasi vitae ut! Quidem eaque ab inventore hic dolore nam possimus recusandae? Consequuntur eos velit voluptates incidunt dignissimos totam ipsum impedit libero iste, unde quia consequatur. Eius iste id aperiam praesentium molestiae magnam est quam tempore deserunt eligendi. Necessitatibus optio commodi veritatis quis aperiam iusto nihil excepturi deleniti distinctio autem quidem sint ipsa, blanditiis debitis, itaque magni accusamus?
+</section>
+<section id="third">
+    <h2>third</h2>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolorem, placeat quam alias vel ullam accusamus. Assumenda pariatur voluptas, ad possimus tenetur officiis est animi. Sequi animi cum culpa ad, voluptates dolorem necessitatibus asperiores dolorum, consequuntur libero aperiam debitis aliquam omnis, quas perspiciatis! Debitis fugiat dolor eos ipsum, error necessitatibus repellat consequuntur, fuga, blanditiis sint sapiente qui facilis iure? Odio, alias. Mollitia tempore sit facere necessitatibus vel consectetur sunt odio atque reiciendis quas! Voluptatem alias inventore nostrum sint voluptas ullam dolor voluptates eveniet ex natus, debitis quis veniam. Nam pariatur odit quaerat officiis. Nihil, nisi quibusdam repudiandae blanditiis expedita commodi eveniet praesentium nulla perspiciatis aperiam aliquid, quis ipsum sequi. Veniam, eaque quae architecto sit ratione quia magnam mollitia suscipit voluptatibus, cumque quisquam maiores eum at porro sequi debitis minus rerum magni? Odit fugit architecto, eos saepe vero reiciendis, tempore velit labore quia laudantium, nam aliquam deleniti possimus expedita? Praesentium, dolor quaerat accusantium corrupti maxime aliquid, ipsam optio suscipit excepturi exercitationem quae rem odio provident. Fugit, libero maiores esse commodi dicta quos nisi dignissimos nemo nihil numquam velit molestias itaque expedita provident ea. Totam corrupti deleniti esse molestias recusandae dignissimos rerum suscipit officia, excepturi quasi dicta quod a? Magni quos fugit in rem aperiam ea officia, labore nulla recusandae libero alias ipsa quisquam reprehenderit sed exercitationem tempore, nemo cumque odit voluptas minima autem eligendi neque accusantium rerum. Rerum, ut ipsam. Corporis, iusto. Voluptatibus optio quidem aut nobis quibusdam nesciunt nulla, sapiente ipsum facere, cum iste. Pariatur sed quisquam assumenda minus impedit explicabo eligendi. Itaque quaerat consequatur magnam quos reiciendis aperiam sit. Nihil repudiandae sed iusto eligendi quidem magni nulla nemo harum, laudantium officia incidunt ipsum vel animi nostrum. Voluptatum rerum ex quidem quaerat saepe quod accusantium recusandae similique optio porro eveniet libero sint minus dolorem doloremque totam minima assumenda, facilis consectetur doloribus eum, rem commodi possimus ab! Fuga, harum adipisci ducimus tempore officia consequuntur reiciendis eveniet eligendi nihil autem, nam quia. Necessitatibus earum impedit possimus sed harum fugiat hic libero unde ipsam quia praesentium, laudantium quos aliquid repellat et at tenetur quidem sequi! Facilis sapiente obcaecati animi rerum laborum earum cum totam eius dolores, deleniti velit nulla voluptatum in deserunt iste incidunt magnam ea quasi est provident qui? Minus aperiam cum explicabo tenetur libero eum dolorem sequi sed aspernatur reiciendis mollitia maiores ex, amet voluptatem veniam doloribus voluptate excepturi consequatur architecto eius praesentium qui illum totam delectus? Cumque nisi suscipit minima ad assumenda fuga obcaecati distinctio asperiores placeat hic ipsum iure eaque dolorem possimus aspernatur id quis quo doloremque ullam perspiciatis error, saepe quod fugiat! Praesentium, necessitatibus commodi! Facilis, deleniti consequatur. Eius accusantium aut, odio veritatis corrupti ad minima ullam facere molestias architecto eveniet omnis tempore mollitia expedita quod quam rem laboriosam quia? Excepturi temporibus praesentium, facilis ratione dicta quis reiciendis illo ex expedita necessitatibus hic quaerat. Officiis obcaecati ipsum consequatur corporis quod quaerat soluta, perferendis laudantium repudiandae quae eius! Ex quas eaque quibusdam amet iure pariatur earum itaque modi! Iusto repudiandae velit dicta ab accusamus sint iure! Rerum, molestias magnam.
+</section>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" type="text/javascript"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="script/Navscript.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#main_navbar').bootnavbar();
+        })
+    </script>
+</body>
+
+</html>

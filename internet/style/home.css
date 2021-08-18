@@ -1,0 +1,158 @@
+/* General Resets */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.4;
+}
+
+#page {
+  /* ipads and desktops */
+  /* Responsive stacks for mobile and ipads etc. can change this width size to whatever you prefer */
+}
+
+#page .row {
+  /* flex stuff */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /* general styling */
+  overflow: hidden;
+  margin: 3rem auto;
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  background: #eee;
+}
+
+#page .row .col {
+  /* this is the flexbox stuff */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  /* this is aligning the content to the left of the box */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* this vertically aligns all content in the center of the box */
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* this makes all the content stack within the box */
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(100% - 2rem);
+          flex: 0 0 calc(100% - 2rem);
+  max-width: calc(100% - 2rem);
+  /* this flex and max-width above make the cols full width for mobile etc. you'll see where I set it to 50% for browser width above 767.98px */
+  /* general styling */
+  margin: 0 1rem;
+  background: #fff;
+  /* takes care of the smooth slide */
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+#page .row .col.p-2 {
+  padding: 2rem;
+  /* just a class for padding on the boxes without an image */
+}
+
+#page .row .col img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* this makes the image fill the box proportionately */
+}
+
+#page .row .col button {
+  display: inline-block;
+  padding: 1rem;
+  background: #529fb8;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  #page .row {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    /* this makes the boxes span across without wrapping to a new line */
+    /* when button is clicked, add an active class to the row */
+    /* this stuff is just to show you a fun way to switch the order of the columns without actually doing it in HTML. if you look at the html the two rows are exactly the same structure but a fun "order:" with flex-box allows you to change that. */
+    /* end order stuff */
+  }
+  #page .row .col {
+    /* these two keep them all at 50% side and the -2rem is to account for the margins i set for spacing on the cols */
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(50% - 2rem);
+            flex: 0 0 calc(50% - 2rem);
+    max-width: calc(50% - 2rem);
+  }
+  #page .row.box-active .col {
+    -webkit-transform: translateX(calc(-100% - 2rem));
+            transform: translateX(calc(-100% - 2rem));
+    /* the -2rem in the calc is accounting for the column margins for spacing. You wouldn't need those if you want your boxes without spacers */
+  }
+  #page .row.box-active .col:last-of-type {
+    -webkit-transform: translateX(calc(-100% - 2rem));
+            transform: translateX(calc(-100% - 2rem));
+  }
+  #page .row:nth-child(even) .col {
+    -webkit-transform: translateX(calc(-100% - 2rem));
+            transform: translateX(calc(-100% - 2rem));
+  }
+  #page .row:nth-child(even) .col:nth-child(1) {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  #page .row:nth-child(even) .col:nth-child(2) {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  #page .row:nth-child(even) .col:last-of-type {
+    -webkit-transform: translateX(calc(-100% - 2rem));
+            transform: translateX(calc(-100% - 2rem));
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  #page .row:nth-child(even).box-active .col {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  #page .row:nth-child(even).box-active .col:last-of-type {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@media (max-width: 767.98px) {
+  #page .row {
+    height: calc(600px + 6rem);
+  }
+  #page .row .col {
+    margin-bottom: 2rem;
+    height: 300px;
+  }
+  #page .row.box-active .col {
+    -webkit-transform: translateY(calc(-100% - 2rem));
+            transform: translateY(calc(-100% - 2rem));
+  }
+}
+/*# sourceMappingURL=home.css.map */

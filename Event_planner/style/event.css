@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@0;1&display=swap");
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+
+#event {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 2em 0px;
+}
+
+#event .form {
+  background-color: #fff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#event .form #close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  cursor: pointer;
+}
+
+#event .form #close i {
+  border: 1px solid;
+  border-radius: 50%;
+  padding: 8px 11px;
+  margin: 10px 0px;
+  color: #716F81;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#event .form textarea {
+  resize: none;
+}
+
+#event .form input {
+  height: 29px;
+  border-radius: 10px;
+  padding: 0px 10px;
+  outline: none;
+  border: none;
+  background-color: #EEEEEE;
+}
+
+#event .form label {
+  padding: 0px 10px;
+  font-size: .9rem;
+}
+
+#event .form label i {
+  color: #716F81;
+}
+
+#event .form textarea {
+  padding: 0px 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: #EEEEEE;
+}
+
+#event .form .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+#event .form .button button {
+  outline: none;
+  border: none;
+  font-size: 1.1rem;
+  padding: 5px 18px;
+  color: #716F81;
+  background-color: #EEEEEE;
+  border-radius: 10px;
+}
+
+#event .form .button button:hover {
+  background-color: #035397;
+  -webkit-transition: ease .4s;
+  transition: ease .4s;
+  color: #EEEEEE;
+}
+
+.event-hidden {
+  -webkit-transition: ease .5s;
+  transition: ease .5s;
+  -webkit-transform: translateY(-200%);
+          transform: translateY(-200%);
+}
+
+.event-active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: ease .6s;
+  transition: ease .6s;
+}
+
+#response {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: ease .4s;
+  transition: ease .4s;
+}
+
+#response .container .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+  -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#response .container .response-text {
+  font-size: 1.2rem;
+}
+
+#response .container .response-text i {
+  font-size: 1.2rem;
+  margin: 0px 10px;
+}
+
+#calendar-wrapper {
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+#result {
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 20px;
+}
+/*# sourceMappingURL=event.css.map */

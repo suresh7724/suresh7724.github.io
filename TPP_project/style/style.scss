@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(240, 229, 217);
+    font-family: 'Open Sans', sans-serif;
+}
+#main
+{
+    width: 85%;
+    max-width: 100%;
+    margin: auto;
+    position: relative; 
+    .img-container
+    {
+        position: relative;
+        background: url('../images/Facade-004.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 54px 0px;
+        .booth
+        {
+            font-size: 1.3rem;
+            position: absolute;
+            top: 33px;
+            left: -28px;
+            color: #000;
+            background-color: #fff;
+            border-radius: 30px;
+            padding: 3px 12px;
+        }
+        .btn
+        {
+            width: fit-content;
+            margin-left: auto;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 113px;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 1.1rem;
+            padding: 4px 18px;
+            border-radius: 20px;
+            text-decoration: none;
+            background-color: #fff;
+            border: 3px solid red;
+            margin-right: 64px;
+          a{
+            color: #000;
+
+          }
+            i{
+                font-size: 1.5rem;
+                margin-left: 6px;
+                color: red;
+                margin-top: 1px;
+            }
+        }
+        .row
+        {
+            position: relative;
+        text-transform: uppercase;
+            margin-top: 20px;   
+            max-width: 100%;
+            padding: 0px 50px;
+            h4{
+                color:#fff;
+                font-weight: 700;
+                text-align: center;
+            }
+    
+        
+            .img-column
+            {
+                margin: 20px auto;
+            }
+            display: flex;
+            flex-wrap: wrap;
+            .box
+            {
+                width: 30%;
+                margin: 30px 0px;
+            }
+            .card{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            }
+            .second
+            {
+                float: right;
+                margin-left: 20px;
+            }
+            .first
+            {
+                margin-left: 0px;
+            }
+           
+           
+        }
+    }
+}
+
+@media only screen and (max-width:992px)
+{
+    #main
+    {
+        .img-container{
+        .row
+        {
+            .box
+            {
+                width: 50%;
+            }
+            .second
+            {
+                margin-left: 0px;
+                float: none;
+            }
+            img{
+                width: 100px;
+            }
+        }
+    }
+}
+}
+@media only screen and (max-width:768px)
+{
+    #main
+    {
+        .img-container{
+        .row
+        {
+          
+            .second
+            {
+                margin-left: 0px;
+            }
+        }
+    }
+}
+}
+@media only screen and (max-width:576px)
+{
+    #main
+    {
+        width: 100%;
+        .img-container
+        {
+            .booth
+            {
+                left: 20px;
+                top: 57px;
+            }
+        }
+    }
+}
+@media only screen and (max-width:383px)
+{
+    #main
+    {
+        .img-container
+        {
+            .row
+            {
+                .box
+                {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="calendar/style.css">
+  <link rel="stylesheet" href="calendar/theme.css">
+  <link rel="stylesheet" href="style/event.css">
+  <title>Event Planner</title>
+</head>
+
+<body>
+
+  <section id="response" class="response d-none">
+    <div class="container">
+      <div class="box col-md-6 mx-auto response-text">
+        Event is created Successfully <i class="fa fa-check-circle text-success" aria-hidden="true"></i>
+      </div>
+    </div>
+  </section>
+  <div class="container">
+    <div class="row d-flex justify-content-center align-items-center">
+      <div class="col-lg-6 mx-auto mt-3" id="calendar-wrapper">
+      </div>
+      <div id="result" class="col-md-5 mx-auto my-3">
+        <h4 class="text-center">Event Details</h4>
+        <div>
+          <div class="col-10">
+            <div class="row">
+              <div class="col-6">Event Created At:</div>
+              <div class="col-6" id="output_date"></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="col-10">
+            <div class="row">
+              <div class="col-6">Title :</div>
+              <div class="col-6" id="output_title"></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="col-10">
+            <div class="row">
+              <div class="col-6">Time :</div>
+              <div class="col-6" id="output_time"></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="col-10 ">
+            <div class="row">
+              <div class="col-6">Invitee Name :</div>
+              <div class="col-6" id="output_invitee"></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="col-10">
+            <div class="row">
+              <div class="col-6">Host Name :</div>
+              <div class="col-6" id="output_host"></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="col-10">
+            <div class="row">
+              <div class="col-6">Host Phone :</div>
+              <div class="col-6" id="output_host_phone"></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="col-10 ">
+            <div class="row">
+              <div class="col-6">Description :</div>
+              <div class="col-6" id="output_description"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="event" class="event event-hidden">
+    <div class="container">
+      <div class="form col-md-4 col-sm-8 col-12 mx-auto">
+        <div id="close">
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <div class="input d-flex flex-column py-1">
+          <label for="date">Create Meeting For <i class="fas fa-calendar-week"></i></label>
+          <input type="text" value="21-23-2021" id="event_date" disabled>
+        </div>
+        <div class="input d-flex flex-column py-1">
+          <label for="title">Title <i class="fas fa-info-circle"></i></label>
+          <input type="text" id="title" required>
+        </div>
+        <div class="input d-flex flex-column py-1">
+          <label for="inviter_name">Time <i class="fas fa-clock"></i></label>
+          <input type="time" id="time">
+        </div>
+        <div class="input d-flex flex-column py-1">
+          <label for="inviter_name">Invitee name <i class="fas fa-handshake"></i></label>
+          <input type="text" id="invitee">
+        </div>
+        <div class="input d-flex flex-column py-1">
+          <label for="host">Host Name <i class="fas fa-user"></i></label>
+          <input type="text" id="host_name">
+        </div>
+        <div class="input d-flex flex-column py-1">
+          <label for="host_phone">Host Phone <i class="fas fa-phone-volume"></i></label>
+          <input type="number" id="host_phone">
+        </div>
+        <div class="input d-flex flex-column py-1">
+          <label for="host_phone">Description <i class="fas fa-comment-alt"></i></label>
+          <textarea name="description" id="message" cols="30" rows="3"></textarea>
+        </div>
+        <div class="button">
+          <button id="create">Create</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script src="script/jquery-3.6.0.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="calendar/calendar.min.js"></script>
+  <script src="script/event.js"> </script>
+</body>
+
+</html>

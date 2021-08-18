@@ -1,0 +1,35 @@
+  <form name="loginForm" method="post" action="login.php">
+      <table width="20%">
+
+
+        <tr>
+          <td>Username:</td>
+          <td><input type="text" size=25 name="userid"></td>
+        </tr>
+
+        <tr>
+          <td>Password:</td>
+          <td><input type="Password" size=25 name="pwd"></td>
+        </tr>
+
+        <tr>
+          <td><input type="Reset"></td>
+          <td><input type="submit" onclick="return check(this.form)" value="Login"></td>
+        </tr>
+
+      </table>
+      <table width="100%">
+        <tr>
+          <td height="31">
+            <p>&nbsp;</p>
+            <p>Subsribe to receive offers and training updates</p>
+          </td>
+        </tr>
+        <tr>
+          <td width="30" height="42"><label for="email subsription"></label>
+            <input type="text" name="email subsription" id="email subsription">
+            <img src="images/button.jpg" alt="" name="" width="104" height="36" usemap="#Map">
+          </td>
+        </tr>
+      </table>
+      <p>&nbsp;</p>

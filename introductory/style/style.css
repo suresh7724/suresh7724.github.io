@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+body {
+  padding: 0px;
+  margin: 0px;
+  scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #FFFBFC;
+}
+
+input {
+  background-color: #FFFBFC;
+}
+
+img {
+  width: 100%;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.logo {
+  margin: 30px 20px;
+}
+
+#main .title {
+  border-bottom: 1px solid #EEEEEE;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 50px auto;
+}
+
+#contact {
+  margin: 50px 0px;
+}
+
+#contact .box {
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 30px;
+}
+
+#contact .social {
+  margin: 20px 0px;
+}
+
+#contact .social a {
+  color: #344E99;
+  -webkit-transition: ease .4s;
+  transition: ease .4s;
+}
+
+#contact .social a i {
+  -webkit-transition: ease .2s;
+  transition: ease .2s;
+  -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  border-radius: 50%;
+  padding: 12px 12px;
+  font-size: 1.2rem;
+}
+
+#contact .social a:hover {
+  color: #fff;
+}
+
+#contact .social a:hover i {
+  background-color: #344E99;
+}
+
+#contact .user-input-wrp {
+  position: relative;
+  width: 100%;
+  margin: 20px 0px;
+}
+
+#contact .user-input-wrp .inputText {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  -webkit-transition: ease .1s;
+  transition: ease .1s;
+}
+
+#contact .user-input-wrp .inputText:focus {
+  border-color: blue;
+  border-width: medium medium 2px;
+}
+
+#contact .user-input-wrp .floating-label {
+  position: absolute;
+  pointer-events: none;
+  top: 18px;
+  left: 10px;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  color: #ccc;
+}
+
+#contact .user-input-wrp input:focus ~ .floating-label,
+#contact .user-input-wrp input:not(:focus):valid ~ .floating-label {
+  top: 0px;
+  left: 10px;
+  font-size: 13px;
+  opacity: 1;
+}
+
+#contact .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#contact .button button {
+  outline: none;
+  border: 1px solid transparent;
+  background-color: #40589F;
+  color: #fff;
+  padding: 8px 24px;
+  border-radius: 22px;
+  font-size: 1.1rem;
+  -webkit-transition: ease .4s;
+  transition: ease .4s;
+}
+
+#contact .button button:hover {
+  color: #40589F;
+  background-color: #fff;
+  border: 1px solid #344E99;
+}
+
+.top i {
+  font-size: 2.1rem;
+  margin: 0px 15px;
+  color: #ccc;
+}
+
+.top .name {
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+.top a {
+  color: #000;
+}
+
+.top .details {
+  margin-top: -1px;
+}
+
+.page li {
+  border-right: 1px solid #ccc;
+  padding-right: 10px;
+}
+
+.page li a {
+  color: #000;
+  -webkit-transition: ease .4s;
+  transition: ease .4s;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.page li a:hover {
+  color: #344E99;
+}
+
+.page li .active {
+  color: #344E99;
+}
+
+.we {
+  list-style: disc;
+}
+
+#footer {
+  background-color: #FEF3F1;
+  padding: 45px;
+}
+
+#footer ul li {
+  padding-left: 20px;
+  margin: 14px 0px;
+}
+
+#footer ul li a {
+  color: #000;
+}
+
+.copyright {
+  margin-top: 30px;
+  padding: 30px;
+  font-size: 1.1rem;
+  background-color: #F2F3F5;
+}
+
+.top-dec, .bottom {
+  margin: 10px 0px;
+}
+
+.top-dec a, .bottom a {
+  color: #000;
+  text-decoration: underline;
+  margin: 0px 20px;
+}
+
+.top-dec i, .bottom i {
+  border: 1px solid;
+  padding: 7px;
+  margin-right: 10px;
+  color: #344E99;
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+  height: 700px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
+/*# sourceMappingURL=style.css.map */

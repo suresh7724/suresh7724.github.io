@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <div class="row justify-content-between my-4 mx-3 flex-md-row flex-column align-items-center">
+        <div class="col-2 d-flex flex-column justify-content-center align-items-center">
+            <a href="index.html">
+                <div class="image">
+                <img src="img/Logo.png" alt="">
+            </div>
+            </a>
+        </div>
+        
+        <div class="col-4 my-3 my-md-0">
+            <ul class="list-unstyled d-flex justify-content-center align-items-center top">
+                <li class="mx-2 d-flex justify-content-center align-items-center"><i class="fas fa-phone-volume    "></i> <a href="" class="d-flex flex-column">
+                    <div class="name">Phone</div>     
+                    <div class="details">+10832099329</div>     
+                </a> </li>
+                <li class="mx-2 d-flex justify-content-center align-items-center"><i class="fa fa-envelope" aria-hidden="true"></i> <a href="" class="d-flex flex-column">
+                    <div class="name">Email</div>     
+                    <div class="details">buisness@maile.com</div>     
+                </a> </li>
+            </ul>   
+        </div>
+    </div>
+    <ul class="page my-3 list-unstyled d-flex mx-4 justify-content-center justify-content-md-start">
+        <li class="mx-2"><a href="index.html">Home</a> </li>
+        <li class="mx-2"><a href="about.html">About Us</a> </li>
+        <li class="mx-2"><a href="contact.html" class="active"> Contact</a></li>
+    </ul>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Any Questions? Check out our FAQ section for the details on how to open a wholesale account and more.</p>
+            <div class="top-dec">
+                <div class="location">
+                    <a href=""><i class="fa fa-map-marker" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, voluptates?</a>
+                </div>
+            </div>
+            <div class="bottom d-md-flex">
+                <div class="phone">
+                    <a href=""><i class="fa fa-phone-alt" aria-hidden="true"></i> +3298372</a>
+                </div>
+                <div class="mail">
+                    <a href=""><i class="fa fa-envelope" aria-hidden="true"></i> Buisness@mail.com</a>
+                </div>
+            </div>
+            <div class="row my-5">
+                <div class="col-sm-11 col-md-9 col-lg-7 h-100">
+                    
+                    <div id="map"></div>
+                </div>
+            <div class="col-sm-11 col-md-9 col-lg-5 mx-auto my-2 box">
+                <div class="social">
+                    <ul class="links d-flex list-unstyled">
+                        <li class="item mx-2"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="item mx-2"><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li class="item mx-2"><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li class="item mx-2"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+                <div class="head my-3">
+                    <h2>Message</h2>
+                </div>
+                <div class="user-input-wrp">
+                    <br>
+                    <input type="text" id="name" class="inputText col-12" required />
+                    <span class="floating-label">Full Name</span>
+                </div>
+                <div class="user-input-wrp">
+                    <br>
+                    <input type="text" id="mail" class="inputText col-12" required />
+                    <span class="floating-label">Your Mail</span>
+                </div>
+                <div class="user-input-wrp">
+                    <br>
+                    <input type="text" id="subject" class="inputText col-12" required />
+                    <span class="floating-label">Subject Name</span>
+                </div>
+                <div class="user-input-wrp">
+                    <br>
+                    <input type="text" id="message" class="inputText col-12" required />
+                    <span class="floating-label">Type Your Message</span>
+                </div>
+                <div class="button">
+                    <button id="submit">Send</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer id="footer">
+        <div class="container d-md-flex justify-content-between">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+         
+                <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, repudiandae.</a></li>
+                <li><a href="#">+103829830</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+        </div>
+    </footer>
+    <div class="copyright">
+        &#169;	2021 | All Rights Reserved | Lorem, ipsum dolor.
+    </div>
+    <script src="script/jquery-3.6.0.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="script/smtp.js"></script>
+    <script src="script/app.js"></script>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOZl3tawfRhHIkk5-Zp-hK6BZ3rbmlvhk&q&callback=initMap&libraries=&v=weekly"async></script>
+
+    <script>
+     // Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  const uluru = { lat: 34.167381345470616, lng: -118.29184743349902 };
+  // The map, centered at Uluru
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 17,
+    center: uluru,
+  });
+  // The marker, positioned at Uluru
+  const marker = new google.maps.Marker({
+    position: uluru,
+    map: map,
+  });
+}
+    </script>
+</body>
+
+</html>

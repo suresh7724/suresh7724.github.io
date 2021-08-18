@@ -1,0 +1,40 @@
+window.onresize=function()
+{
+
+    if($(window).width()<=1000)
+    {
+        $('.drop-link').addClass('close-burger');
+        console.log('in function');
+        
+        $('.drop-link').attr('data-toggle','collapse')
+        $('.drop-link').data('collapse')
+        $(".dropdown-item").click(function()
+        {
+        document.body.style.overflow="";
+
+        })
+    }
+    
+}
+
+
+// for desktop remove close burger class
+if($(window).width()>1000)
+{
+    $('.drop-link').removeClass('close-burger');
+    $('.drop-link').removeAttr('data-toggle')
+    $('.dropdown-item').click(function()
+    {
+        console.log('function');
+        $('.dropdown-menu').removeClass('show')
+
+        
+    })
+}
+
+// remove body style from hidden to visible
+  $(".drop-link").click(function()
+        {
+        document.body.style.overflow="";
+            
+        })

@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #f0e5d9;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#main {
+  width: 85%;
+  max-width: 100%;
+  margin: auto;
+  position: relative;
+}
+
+#main .img-container {
+  position: relative;
+  background: url("../images/Facade-004.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 54px 0px;
+}
+
+#main .img-container .booth {
+  font-size: 1.3rem;
+  position: absolute;
+  top: 33px;
+  left: -28px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 3px 12px;
+}
+
+#main .img-container .btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 113px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 4px 18px;
+  border-radius: 20px;
+  text-decoration: none;
+  background-color: #fff;
+  border: 3px solid red;
+  margin-right: 64px;
+}
+
+#main .img-container .btn a {
+  color: #000;
+}
+
+#main .img-container .btn i {
+  font-size: 1.5rem;
+  margin-left: 6px;
+  color: red;
+  margin-top: 1px;
+}
+
+#main .img-container .row {
+  position: relative;
+  text-transform: uppercase;
+  margin-top: 20px;
+  max-width: 100%;
+  padding: 0px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#main .img-container .row h4 {
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+}
+
+#main .img-container .row .img-column {
+  margin: 20px auto;
+}
+
+#main .img-container .row .box {
+  width: 30%;
+  margin: 30px 0px;
+}
+
+#main .img-container .row .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main .img-container .row .second {
+  float: right;
+  margin-left: 20px;
+}
+
+#main .img-container .row .first {
+  margin-left: 0px;
+}
+
+@media only screen and (max-width: 992px) {
+  #main .img-container .row .box {
+    width: 50%;
+  }
+  #main .img-container .row .second {
+    margin-left: 0px;
+    float: none;
+  }
+  #main .img-container .row img {
+    width: 100px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #main .img-container .row .second {
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #main {
+    width: 100%;
+  }
+  #main .img-container .booth {
+    left: 20px;
+    top: 57px;
+  }
+}
+
+@media only screen and (max-width: 383px) {
+  #main .img-container .row .box {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

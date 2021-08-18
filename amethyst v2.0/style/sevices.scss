@@ -1,0 +1,106 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Padauk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Padauk&display=swap');
+
+$font2:'Padauk', sans-serif;
+
+$font:'Padauk', sans-serif;
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.info
+{
+    display: flex;
+    width: 100%;
+    .box-1
+    {
+        background-color: #fff;
+    height: 100%;
+    width: 32.99%;
+    margin-right: 2%;
+    // margin-left: 1%;
+    padding-bottom: 23px;
+    .back-image
+    {
+        img{
+            width: 87%;
+        }
+    }
+    h4{
+        color: #73126c;
+        font-size: 33px;
+        font-family: $font;
+    }
+        p{
+            color: #8c77a8;
+            font-size: 16px;
+        }
+
+        .read
+        {
+            margin-top: 10px;
+            .read-1
+            {
+                border: 2px solid #73126c;
+                width: fit-content;
+                a{
+                  font-size: 24px;
+                  font-family: $font2;
+                }
+                position: relative;
+                bottom: 0px;
+            }
+            .read-1:hover
+            {
+                background-color: #73126c;
+                transition: ease 1s all;
+                a{
+                    transition: ease 1s all;
+                    color: #fff;
+                }
+            }
+        }
+        
+    }
+}
+
+@media screen and (max-width: 1036px){
+    .info
+    {
+        flex-direction: column;
+        .box-1
+        {
+            width: 100%;
+            margin-top: 20px;
+            .title
+            {
+                display: flex;
+                justify-content: center;
+            }
+            .desc
+            {
+                display: flex;
+                justify-content: center;
+
+            }
+            .read
+        {
+            margin-top: 10px;
+            .read-1
+            {
+                
+                a{
+                  font-size: 17px;
+                  
+                }
+            }
+        }
+        }
+    }
+}

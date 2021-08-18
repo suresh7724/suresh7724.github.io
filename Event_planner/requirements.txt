@@ -1,0 +1,13 @@
+-show this month I click tomorrow (Saturday 30) and see a form that says 
+CREATE MEETING for 7/30/2021
+title : XXXXXXXXXXX
+time: (here maybe allow time in like drop down with all the times)
+Invitee name:
+Invitee phone number:
+Host name:
+Huste phone number:
+Description:
+
+and below that a button that says "CREATE"
+
+once I click the CREATE BUTTON i will send all the information to a JSON POST....

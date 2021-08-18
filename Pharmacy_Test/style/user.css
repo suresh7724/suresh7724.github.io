@@ -1,0 +1,77 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth;
+  max-width: 100%;
+  background-color: #f7f7f7;
+}
+
+.container .row {
+  width: 100%;
+  margin: auto;
+}
+
+.container input {
+  height: 44px;
+  padding-left: 20px;
+}
+
+.container .input {
+  margin-top: 20px;
+}
+
+.container input, .container label {
+  border: none;
+  border-radius: 14px;
+  text-transform: capitalize;
+  width: 100%;
+}
+
+.container i {
+  color: #DBCBBD;
+  margin-right: 3px;
+  padding-left: 11px;
+  font-size: 1.1rem;
+}
+
+.container .head {
+  margin: 10px 0px;
+}
+
+.container .head .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .head .image img {
+  width: 136px;
+  border-radius: 50%;
+  height: 136px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.container .card {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 20px 0px;
+  padding: 30px;
+  width: 400px;
+}
+
+@media only screen and (max-width: 432px) {
+  .container .card {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 298px) {
+  .container {
+    padding: 15px 0px;
+  }
+}
+/*# sourceMappingURL=user.css.map */

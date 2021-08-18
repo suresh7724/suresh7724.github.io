@@ -1,0 +1,13 @@
+And maybe add contact us form and space for couple of what we do points
+https://empiredistributionusa.com/contacts
+https://avidwholesalegroup.com/
+
+Thank you Suresh, overall looks good. Couple of notes:
+// 1. I'd like to have phone & Email section in the top right corner. 
+//2. You can delete 2nd logo downbelow. Let instead be 3 rectangular spaces beside each other where later I can add text about what we do
+//3. Looks like our partners logos are not horizontally aligned. visually they are up and down. And can you switch places of Frontier and bargain?
+//4. Below our logo let's add 3 buttons - Home, About us and Contacts
+5.Please remove message form from Home menu and switch that to Contacts page.
+6. Please make Contacts page exactly like this page: https://empiredistributionusa.com/contacts including hyperlinked address to google maps and hyperlinked email. Please include also map if you can to do so. After making it I'll just change text on that page.
+7. Please move warehouse photos to About us page and leave space below pictures, so I can add text there later on. For reference you can take a look to https://empiredistributionusa.com/about
+8. Please add section like in the next attached picture to be visible on all 3 of our pages with appropriate to us menu

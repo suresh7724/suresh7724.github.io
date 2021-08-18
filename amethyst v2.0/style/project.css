@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.nav-list {
+  background-color: #fff;
+}
+
+.nav-list h4 {
+  margin: 10px;
+}
+
+.nav-list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.nav-list ul .active {
+  background-color: #7b256c;
+  -webkit-transition: ease all 1s;
+  transition: ease all 1s;
+}
+
+.nav-list ul .active a {
+  color: white;
+  margin: 5px;
+}
+
+.nav-list ul li {
+  margin: 6px;
+}
+
+.nav-list ul li a {
+  font-size: 1.5rem;
+}
+
+#projects {
+  background-color: #fff;
+}
+
+#projects .row .col img {
+  width: 100%;
+}
+
+#projects .row .col .title h4 a {
+  font-weight: 500;
+}
+
+#projects .row .col .title h4 a:hover {
+  color: cornflowerblue;
+}
+
+#projects .row .col .desc p {
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 1.8rem;
+  font-size: 1rem;
+}
+
+#projects .row .col .read {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#projects .row .col .read .read-1 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 2px solid #7b256c;
+  background-color: #7b256c;
+}
+
+#projects .row .col .read .read-1 a {
+  margin: 7px;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+#projects .row .col .read .read-1:hover {
+  -webkit-transition: ease 1s all;
+  transition: ease 1s all;
+  background-color: #fff;
+}
+
+#projects .row .col .read .read-1:hover a {
+  color: #7b256c;
+}
+
+@media screen and (max-width: 768px) {
+  .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=project.css.map */

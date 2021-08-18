@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  width: 100vw;
+  overflow: hidden;
+}
+
+table tr {
+  display: inline-block;
+  width: 50%;
+  overflow: hidden;
+}
+
+table td {
+  width: 200px !important;
+  overflow: hidden !important;
+  border: 1px solid #C6B4CE;
+  background-color: #f7f7f7;
+}
+
+table .diff_next {
+  width: 0px !important;
+}
+
+table td.diff_header {
+  width: 80px !important;
+  padding-right: 20px !important;
+  height: 40px !important;
+}
+/*# sourceMappingURL=style.css.map */

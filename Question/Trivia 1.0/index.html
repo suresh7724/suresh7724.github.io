@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <div id="alert">
+
+    </div>
+
+    <button class="btn-primary" id="start">
+        Start
+    </button>
+    <div id="score">
+
+    </div>
+    <div id="questionNumber">
+
+    </div>
+    <!-- this will fetch the data -->
+    <button class="spinner" onclick="loadData()">Load data</button>
+
+    <!-- this will show our spinner -->
+    <div hidden id="spinner"></div>
+    <div id="question">
+
+    </div>
+    <div id="options">
+
+    </div>
+    <div id="next" class="d-none">
+        <button class="btn btn-primary">
+            Next
+        </button>
+    </div>
+    <div id="result">
+        
+    </div>
+    <div id="results" class="d-none">
+        <button class="btn btn-primary">View results</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

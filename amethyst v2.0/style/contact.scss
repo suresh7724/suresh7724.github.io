@@ -1,0 +1,66 @@
+textarea {
+  resize: none;
+  background-color: aquamarine;
+}
+
+#contact {
+  padding: 20px;
+  background-color: #fff;
+  display: flex;
+  .adress {
+    width: auto;
+    .desc {
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+  .adress-1 {
+    //  display: flex;
+    p {
+      margin: auto;
+      font-size: 18px;
+    }
+    padding-bottom: 10px;
+  }
+  .telephone {
+    p {
+      font-size: 19px;
+    }
+  }
+  .mail {
+    p {
+      font-size: 19px;
+      a:hover {
+        color: rgb(109, 98, 150);
+      }
+    }
+  }
+  .button
+  {
+      button
+      {
+          outline: none;
+          border: 2px solid #72066b;
+
+          background-color: #72066b;
+          color: white;
+          padding: 4px;
+          font-size: 20px;
+      }
+
+      button:hover
+      {
+          border: 2px solid #72066b;
+          background-color: #fff;
+          color: #72066b;
+          transition: ease .5s all;
+      }
+  }
+}
+
+@media screen and (max-width: 873px) {
+  #contact {
+    flex-direction: column;
+  }
+}

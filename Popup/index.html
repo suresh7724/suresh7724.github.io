@@ -1,0 +1,201 @@
+<!-- malgotop
+Jul 10, 1:35 AM
+ReportSpam
+If formula 1 is selected show in bottom 30 CAPSULES 2 spaces 15€/ / MOIS
+If formula 2 is selected show in bottom 60 CAPSULES 2 spaces 30€/ / MOIS
+If formula 3 is selected show in bottom 90 CAPSULES 2 spaces 60€/ / MOIS
+If formula 4 is selected show in bottom 120 CAPSULES 2 spaces 120€/ / MOIS -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Popup</title>
+  </head>
+  <body>
+    <style>
+      #popup {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+      }
+      #popup .wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* background-color: #BF1363; */
+      }
+      #popup .wrap span {
+        text-align: center;
+        margin: 20px 0px;
+        font-size: 1.1rem;
+        color: #444444;
+      }
+      #popup .wrap .head {
+        display: flex;
+        width: 100%;
+        margin: 20px 0px;
+      }
+      #popup .wrap .head .user_value {
+        border: 1px solid #d6d2c4;
+        cursor: pointer;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        align-items: center;
+        font-size: 1.2rem;
+        transition: 0.6s;
+        width: 40px;
+        height: 40px;
+      }
+      #popup .wrap .head :hover {
+        color: #fff;
+        transition: 0.6s;
+        background-color: #444444;
+      }
+      #popup .wrap .head .active {
+        background-color: #171717;
+        color: #fff;
+        border: 1px solid transparent;
+        transition: 0.6s;
+      }
+      #popup .wrap .bottom {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        /* width: 328px; */
+      }
+      #popup .wrap .bottom #price {
+        text-align: center;
+        width: fit-content;
+        margin: 11px 0px;
+        height: 38px;
+        font-size: 1.4rem;
+        padding: 0px 26px;
+        border: none;
+        outline: none;
+        color: #bf1363;
+        transition: 0.6s;
+        display: flex;
+        justify-content: space-between;
+      }
+      #popup .wrap #price .capsule {
+        margin: 0px 30px;
+      }
+      #popup .wrap #price .capsule .value {
+        color: #006600;
+        font-weight: 900;
+        font-size: 2rem;
+      }
+      #popup .wrap #price .capsule .name {
+        color: #444444;
+        font-size: 1rem;
+        text-align: center;
+      }
+    </style>
+    <div id="popup">
+      <div class="wrap">
+        <div class="head">
+          <div class="user_value active">1</div>
+          <div class="user_value">2</div>
+          <div class="user_value">3</div>
+          <div class="user_value">4</div>
+          <div class="user_value">5+</div>
+        </div>
+        <span>
+          Votre consommation mensuelle <br />approximative de café :
+        </span>
+        <div class="bottom">
+          <div id="price">
+            <div class="capsule">
+              <div class="value">120</div>
+              <div class="name">CAPSULES</div>
+            </div>
+            <div class="capsule">
+              <div class="value">30€</div>
+              <div class="name">/ MOIS</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      var capsule = document.getElementById("price");
+      capsule.innerHTML = ` <div class="capsule">
+              <div class="value">30</div>
+              <div class="name">CAPSULES</div>
+            </div>
+            <div class="capsule">
+              <div class="value">15&#8364;</div>
+              <div class="name">/ MOIS</div>
+            </div>`;
+      var user_value = document.getElementsByClassName("user_value");
+      for (let i = 0; i < user_value.length; i++) {
+        user_value[i].addEventListener("click", function () {
+          for (j = 0; j < user_value.length; j++) {
+            user_value[j].classList.remove("active");
+          }
+          user_value[i].classList.toggle("active");
+          let text = user_value[i].innerText;
+          if (text == 1) {
+            capsule.innerHTML = ` <div class="capsule">
+              <div class="value">30</div>
+              <div class="name">CAPSULES</div>
+            </div>
+            <div class="capsule">
+              <div class="value">15&#8364;</div>
+              <div class="name">/ MOIS</div>
+            </div>`;
+          }
+          if (text == 2) {
+            capsule.innerHTML = `<div class="capsule">
+              <div class="value">60</div>
+              <div class="name">CAPSULES</div>
+            </div>
+            <div class="capsule">
+              <div class="value">30&#8364;</div>
+              <div class="name">/ MOIS</div>
+            </div>`;
+          }
+          if (text == 3) {
+            capsule.innerHTML = `<div class="capsule">
+              <div class="value">90</div>
+              <div class="name">CAPSULES</div>
+            </div>
+            <div class="capsule">
+              <div class="value">60&#8364;</div>
+              <div class="name">/ MOIS</div>
+            </div>`;
+          }
+          if (text == 4) {
+            capsule.innerHTML = `<div class="capsule">
+              <div class="value">120</div>
+              <div class="name">CAPSULES</div>
+            </div>
+            <div class="capsule">
+              <div class="value">120&#8364;</div>
+              <div class="name">/ MOIS</div>
+            </div>`;
+          }
+          if (text == '5+') {
+            capsule.innerHTML = `<div class="capsule">
+              <div class="value">200</div>
+              <div class="name">CAPSULES</div>
+            </div>
+            <div class="capsule">
+              <div class="value">150&#8364;</div>
+              <div class="name">/ MOIS</div>
+            </div>`;
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

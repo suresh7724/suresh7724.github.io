@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Padauk&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Padauk&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.info .box-1 {
+  background-color: #fff;
+  height: 100%;
+  width: 32.99%;
+  margin-right: 2%;
+  padding-bottom: 23px;
+}
+
+.info .box-1 .back-image img {
+  width: 87%;
+}
+
+.info .box-1 h4 {
+  color: #73126c;
+  font-size: 33px;
+  font-family: "Padauk", sans-serif;
+}
+
+.info .box-1 p {
+  color: #8c77a8;
+  font-size: 16px;
+}
+
+.info .box-1 .read {
+  margin-top: 10px;
+}
+
+.info .box-1 .read .read-1 {
+  border: 2px solid #73126c;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  bottom: 0px;
+}
+
+.info .box-1 .read .read-1 a {
+  font-size: 24px;
+  font-family: "Padauk", sans-serif;
+}
+
+.info .box-1 .read .read-1:hover {
+  background-color: #73126c;
+  -webkit-transition: ease 1s all;
+  transition: ease 1s all;
+}
+
+.info .box-1 .read .read-1:hover a {
+  -webkit-transition: ease 1s all;
+  transition: ease 1s all;
+  color: #fff;
+}
+
+@media screen and (max-width: 1036px) {
+  .info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .info .box-1 {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .info .box-1 .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .info .box-1 .desc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .info .box-1 .read {
+    margin-top: 10px;
+  }
+  .info .box-1 .read .read-1 a {
+    font-size: 17px;
+  }
+}
+/*# sourceMappingURL=sevices.css.map */

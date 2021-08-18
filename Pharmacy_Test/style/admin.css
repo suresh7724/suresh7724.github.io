@@ -1,0 +1,86 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: #f7f7f7;
+  color: #85858a;
+}
+
+.box {
+  padding: 11px 40px;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin: 20px 0px;
+}
+
+i {
+  color: #B2B1B9;
+  margin-right: 4px;
+}
+
+.input {
+  margin: 15px 0px;
+}
+
+.input label {
+  color: #B2B1B9;
+  padding: 0px 24px;
+  font-size: 1.1rem;
+}
+
+.input input, .input select {
+  color: #69696dbe;
+  font-weight: 500;
+  height: 45px;
+  border-radius: 14px;
+  border: none;
+  padding: 0px 24px;
+  background-color: #EEEEEE;
+  font-size: 1.1rem;
+}
+
+.input input:hover, .input input:focus, .input select:hover, .input select:focus {
+  border: none;
+  outline: none;
+  position: relative;
+}
+
+.submit {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+.submit button {
+  border: none;
+  background-color: #5C33F6;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 13px;
+  font-size: 1.1rem;
+  border: 1px solid transparent;
+  -webkit-transition: ease .5s;
+  transition: ease .5s;
+  cursor: pointer;
+}
+
+.submit button:hover {
+  border: 1px solid #5C33F6;
+  background-color: #fff;
+  color: #5C33F6;
+}
+
+.submit button:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 576px) {
+  .box {
+    padding: 11px 7px;
+  }
+  input, select {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=admin.css.map */

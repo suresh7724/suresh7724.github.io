@@ -1,0 +1,77 @@
+#contact {
+  margin: 50px 0px;
+}
+
+#contact .row {
+  margin: 30px 0px;
+}
+
+#contact .head {
+  color: #ccc;
+}
+
+#contact .contact-text {
+  color: #ccc;
+}
+
+#contact .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 20px 0px;
+}
+
+#contact .button button {
+  padding: 10px 10px;
+  font-size: 1.2rem;
+  padding: 9px 25px;
+  border-radius: 11px;
+  color: #ffff;
+  background-color: #01b0f8;
+  border: 1px solid transparent;
+  -webkit-transition: ease .4s;
+  transition: ease .4s;
+}
+
+#contact .button button:hover {
+  border: 1px solid #01b0f8;
+  color: #01b0f8;
+  background-color: transparent;
+}
+
+img {
+  width: 100%;
+}
+
+.form .text {
+  color: #ccc;
+}
+
+.form input {
+  outline: none;
+  margin: 8px 0px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  height: 35px;
+  color: #978c8c;
+}
+
+.form input:hover, .form input:focus {
+  outline: none;
+}
+
+.form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  color: #978c8c;
+  resize: none;
+  outline: none;
+}
+
+.form textarea:hover, .form textarea:focus {
+  outline: none;
+}
+/*# sourceMappingURL=contact.css.map */

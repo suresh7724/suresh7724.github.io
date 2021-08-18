@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap");
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+textarea
+{
+    resize: none;
+}
+#page-1 {
+  background-color: #fff;
+  .content {
+    display: flex;
+
+    #post {
+      width: 65%;
+      padding: 20px;
+      .head {
+        display: flex;
+        justify-content: center;
+        h2 {
+          color: #72066b;
+          margin: 15px;
+          font-size: 43px;
+        }
+      }
+      .desc {
+        margin: 20px;
+        p {
+          font-size: 17px;
+        }
+      }
+      .image {
+        padding: 10px;
+        img {
+          width: 100%;
+        }
+      }
+      .display {
+        margin: 20px;
+        border-top: 3px solid #c4bebe;
+        border-bottom: 3px solid #c4bebe;
+        .icons {
+          margin: 10px;
+          justify-content: center;
+
+          .icon {
+            font-size: 25px;
+          }
+        }
+        .name {
+          margin-top: 5px;
+          margin-left: 10px;
+          font-size: 20px;
+        }
+      }
+    }
+    #right {
+      padding: 60px;
+      .contact {
+        h4 {
+          margin: 10px;
+        }
+        .button {
+          button {
+            outline: none;
+            border: 2px solid #72066b;
+
+            background-color: #72066b;
+            color: white;
+            padding: 4px;
+            font-size: 20px;
+            a {
+              font-family: "Ubuntu", sans-serif;
+            }
+          }
+
+          button:hover {
+            border: 2px solid #72066b;
+            background-color: #fff;
+            color: #72066b;
+            transition: ease 0.5s all;
+          }
+        }
+      }
+    }
+
+  }
+  .others
+  {
+      ul{
+          list-style: none;
+          margin: 30px;
+          li
+          {
+              margin: 10px;
+              display: flex;
+              .icon
+              {
+                  font-size: 20px;
+                  margin-right: 11px;
+              }
+              a{
+                  font-size: 20px;
+              }
+          }
+      }
+  }
+}
+
+@media screen and (max-width: 1008px) {
+    .display
+    {
+        flex-direction: column;
+    }
+    #page-1
+    {
+        .content
+        {
+                #post
+                {
+                    width: 100%;
+                }
+        }
+    }
+}
+@media screen and (max-width: 393px) {
+    .name{
+        font-size: 12px;
+    }
+    .row
+    {
+        display: flex;
+        flex-direction: row;
+        .col
+        {
+            width: 50%;
+        }
+    }
+}
+@media screen and (max-width: 473px) {
+    #page-1
+    {
+        .content
+        {
+            #post
+            {
+                width: 100%;
+                padding: 0px;
+
+                .display{
+                    .tag
+                    {
+                        justify-content: flex-start;
+                    }
+                    .icons
+                    {
+                        margin: 0px;
+                        justify-content: flex-start;
+                    }
+                }
+            }
+            #right
+            {
+                padding: 0px;
+            }
+        }
+    }
+}

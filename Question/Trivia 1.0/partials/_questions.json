@@ -1,0 +1,136 @@
+
+{
+  "response_code": 0,
+  "results": [
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In the video-game franchise Kingdom Hearts, the main protagonist, carries a weapon with what shape?",
+      "correct_answer": "Key",
+      "answers": [
+        "Sword",
+        "Pen",
+        "Cellphone",
+        "Key"
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which American president appears on a one dollar bill?",
+      "correct_answer": "George Washington",
+      "answers": [
+        "Thomas Jefferson",
+        "Abraham Lincoln",
+        "George Washington",
+        "Benjamin Franklin"
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which one of the following rhythm games was made by Harmonix?",
+      "correct_answer": "Rock Band",
+      "answers": [
+        "Rock Band",
+        "Meat Beat Mania",
+        "Guitar Hero Live",
+        "Dance Dance Revolution"
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "According to Sherlock Holmes, &quot;If you eliminate the impossible, whatever remains, however improbable, must be the...&quot;",
+      "correct_answer": "Truth",
+      "answers": [
+        "Answer",
+        "Cause",
+        "Truth",
+        "Source"
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What is Tasmania?",
+      "correct_answer": "An Australian State",
+      "answers": [
+        "A flavor of Ben and Jerry&#039;s ice-cream",
+        "A Psychological Disorder",
+        "The Name of a Warner Brothers Cartoon Character",
+        "An Australian State"
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which country, not including Japan, has the most people of japanese decent?",
+      "correct_answer": "Brazil",
+      "answers": [
+        "China",
+        "Brazil",
+        "South Korea",
+        "United States of America"
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In which fast food chain can you order a Jamocha Shake?",
+      "correct_answer": "Arby&#039;s",
+      "answers": [
+        "McDonald&#039;s",
+        "Burger King",
+        "Arby&#039;s",
+        "Wendy&#039;s"
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "According to the nursery rhyme, what fruit did Little Jack Horner pull out of his Christmas pie?",
+      "correct_answer": "Plum",
+      "answers": [
+        "Plum",
+        "Apple",
+        "Peach",
+        "Pear"
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "The Flag of the European Union has how many stars on it?",
+      "correct_answer": "12",
+      "answers": [
+        "10",
+        "14",
+        "16",
+        "12"
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Who invented the first ever chocolate bar, in 1847?",
+      "correct_answer": "Joseph Fry",
+      "answers": [
+        "Andrew Johnson",
+        "Joseph Fry",
+        "John Cadbury",
+        "John Tyler"
+      ]
+    }
+  ]
+}

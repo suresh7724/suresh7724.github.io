@@ -1,0 +1,45 @@
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  margin: 50px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container #yt {
+  margin: auto;
+}
+
+.container .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid;
+  margin: 10px 10px;
+}
+
+.container .box .image {
+  margin: 0px 20px;
+  width: 100%;
+}
+
+.container .box .image img {
+  width: 100%;
+}
+/*# sourceMappingURL=common.css.map */
