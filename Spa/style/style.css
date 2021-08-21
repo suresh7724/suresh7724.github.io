@@ -272,11 +272,27 @@ body {
 
 .gtco-testimonials .owl-nav {
   position: absolute;
-  top: 34%;
+  width: 100%;
+  top: 19%;
+}
+
+.gtco-testimonials .owl-carousel .owl-nav button.owl-prev {
+  position: absolute;
+  left: 3%;
+}
+
+.gtco-testimonials .owl-theme .owl-nav [class*=owl-]:hover {
+  background: none;
+  color: #000;
+}
+
+.gtco-testimonials .owl-carousel .owl-nav button.owl-next {
+  position: absolute;
+  right: 5%;
 }
 
 .gtco-testimonials .owl-carousel .owl-nav button.owl-next, .gtco-testimonials .owl-carousel .owl-nav button.owl-prev, .gtco-testimonials .owl-carousel button.owl-dot {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 .gtco-testimonials .owl-dots {
@@ -290,7 +306,7 @@ body {
   border-radius: 50%;
   display: block;
   background: transparent !important;
-  border: 2px solid #01b0f8;
+  border: 2px solid #ccc;
   margin: 0 5px;
 }
 
